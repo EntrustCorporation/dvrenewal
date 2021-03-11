@@ -5,10 +5,6 @@ branding:
   icon: 'refresh-cw'  
   color: 'purple'
 
-on:
-  schedule:
-    - cron:  '22 */168 * * *'
-
 inputs:
   DNS_PROVIDER: 
     description: Name of a DNS provider supported by http://github.com/go-acme/lego
