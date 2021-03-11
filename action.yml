@@ -16,7 +16,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://docker.pkg.github.com/digitorus/dv/dv:latest'
+  image: 'docker://ghcr.io/digitorus/dv/dv:latest'
   env:
     DNS_PROVIDER: ${{ inputs.DNS_PROVIDER }}
     DURATION_BEFORE_EXPIRY: ${{ inputs.DURATION_BEFORE_EXPIRY }}
