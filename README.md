@@ -29,7 +29,15 @@ on:
   
   # Run automatically, to check if domains should be renewed
   schedule:
-    - cron: "22 * */7 * *"
+    #         ┌───────────── minute (0 - 59)
+    #         │ ┌───────────── hour (0 - 23)
+    #         │ │  ┌───────────── day of the month (1 - 31)
+    #         │ │  │  ┌───────────── month (1 - 12)
+    #         │ │  │  │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday)
+    #         │ │  │  │ │
+    #         │ │  │  │ │
+    #         │ │  │  │ │
+    - cron: "22 8 */7 * *"
 
 jobs:
   renew:
