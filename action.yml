@@ -22,7 +22,7 @@ inputs:
   ENTRUST_API_USERNAME:
     description: Entrust API username
     required: true
-  ENTRUST_API_PASSEWORD:
+  ENTRUST_API_PASSWORD:
     description: Entrust API password
     required: true
     

@@ -3,6 +3,7 @@
 This GitHub Action allows you to automatically (re)perform domain control validation using the Entrust API and your DNS provider.
 
 **This project is made available by Entrust Corporation under the [MIT license](LICENSE).** As such the GitHub Action is provided to you AS IS and without warranty, as further detailed in the MIT license.
+
 ## Config
 
 | Environment variable            | Value                                                     |
@@ -11,7 +12,7 @@ This GitHub Action allows you to automatically (re)perform domain control valida
 | `ENTRUST_API_CERTIFICATE`       | PEM encoded client certificate                            |
 | `ENTRUST_API_PRIVATE_KEY`       | PEM encoded private key                                   |
 | `ENTRUST_API_USERNAME`          | API Username                                              |
-| `ENTRUST_API_PASSEWORD`         | API Password (API Key)                                    |
+| `ENTRUST_API_PASSWORD`          | API Password (API Key)                                    |
 | `DURATION_BEFORE_EXPIRY`        | Optional, remaining validity before starting revalidation |
 
 Each DNS provider has its own set of environment variables.
@@ -69,7 +70,7 @@ jobs:
           ENTRUST_API_CERTIFICATE: ${{ secrets.ENTRUST_API_CERTIFICATE }}
           ENTRUST_API_PRIVATE_KEY: ${{ secrets.ENTRUST_API_PRIVATE_KEY }}
           ENTRUST_API_USERNAME: ${{ secrets.ENTRUST_API_USERNAME }}
-          ENTRUST_API_PASSEWORD: ${{ secrets.ENTRUST_API_PASSEWORD }}
+          ENTRUST_API_PASSEWORD: ${{ secrets.ENTRUST_API_PASSWORD }}
 
           # Uncomment the setting below to renew early, 6 months in this example.
           # DURATION_BEFORE_EXPIRY: 4380h
