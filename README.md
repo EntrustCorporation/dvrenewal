@@ -36,6 +36,8 @@ Both the Entrust and the DNS provider credentials provide strong entitlements an
 
 **Do not put any credential directly in your configuration file!**
 
+Users should familiarize themselves and apply the guidance in [Security hardening for GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions).
+
 # Example
 
 ```yaml
