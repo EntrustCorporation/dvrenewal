@@ -475,7 +475,7 @@ inputs:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   DNS_ZONE:
-    description:  "DNS zone"
+    description:  "Domain name of the DNS zone"
     required: false
   DODE_HTTP_TIMEOUT:
     description:  "API request timeout"
@@ -1689,14 +1689,14 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/digitorus/dv/dv:latest'
+  image: 'docker://ghcr.io/digitorus/dv/dv:1.0.2'
   env:
     DNS_PROVIDER: ${{ inputs.DNS_PROVIDER }}
     DURATION_BEFORE_EXPIRY: ${{ inputs.DURATION_BEFORE_EXPIRY }}
     ENTRUST_API_CERTIFICATE: ${{ inputs.ENTRUST_API_CERTIFICATE }}
     ENTRUST_API_PRIVATE_KEY: ${{ inputs.ENTRUST_API_PRIVATE_KEY }}
     ENTRUST_API_USERNAME: ${{ inputs.ENTRUST_API_USERNAME }}
-    ENTRUST_API_PASSEWORD: ${{ inputs.ENTRUST_API_PASSEWORD }}
+    ENTRUST_API_PASSWORD: ${{ inputs.ENTRUST_API_PASSWORD }}
 
     ACME_DNS_API_BASE: ${{ inputs.ACME_DNS_API_BASE }}
     ACME_DNS_STORAGE_PATH: ${{ inputs.ACME_DNS_STORAGE_PATH }}
