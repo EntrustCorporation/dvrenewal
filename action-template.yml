@@ -36,13 +36,13 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/digitorus/dv/dv:1.0.1'
+  image: 'docker://ghcr.io/digitorus/dv/dv:1.0.2'
   env:
     DNS_PROVIDER: ${{ inputs.DNS_PROVIDER }}
     DURATION_BEFORE_EXPIRY: ${{ inputs.DURATION_BEFORE_EXPIRY }}
     ENTRUST_API_CERTIFICATE: ${{ inputs.ENTRUST_API_CERTIFICATE }}
     ENTRUST_API_PRIVATE_KEY: ${{ inputs.ENTRUST_API_PRIVATE_KEY }}
     ENTRUST_API_USERNAME: ${{ inputs.ENTRUST_API_USERNAME }}
-    ENTRUST_API_PASSEWORD: ${{ inputs.ENTRUST_API_PASSEWORD }}
+    ENTRUST_API_PASSWORD: ${{ inputs.ENTRUST_API_PASSWORD }}
 
 #--ENV--
