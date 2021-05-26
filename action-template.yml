@@ -1,0 +1,48 @@
+name: Domain Validation
+description: Automatically peform Domain Control Validation for Certificate Authorities using DNS. Currently supporting Entrust.
+author: vanbroup
+branding:
+  icon: 'refresh-cw'  
+  color: 'purple'
+
+inputs:
+  # What DNS provider to use
+  DNS_PROVIDER: 
+    description: Name of a DNS provider supported by http://github.com/go-acme/lego
+    required: true
+
+  # Entrust settings
+  ENTRUST_API_CERTIFICATE:
+    description: PEM encoded client Certificate to authenticate to the Entrust API
+    required: true
+  ENTRUST_API_PRIVATE_KEY:
+    description: PEM encoded client Private Key to authenticate to the Entrust API
+    required: true
+
+  ENTRUST_API_USERNAME:
+    description: Entrust API username
+    required: true
+  ENTRUST_API_PASSWORD:
+    description: Entrust API password
+    required: true
+    
+  DURATION_BEFORE_EXPIRY: 
+    description: Re-validate domains that expire within this time from now, you can set multiple providers by using `DNS_PROVIDER_example_com` for each domain that doesn't use the default provider.
+    default: 744h
+    required: false
+    
+  # DNS Provider settings
+#--SETTINGS--
+
+runs:
+  using: 'docker'
+  image: 'docker://ghcr.io/digitorus/dv/dv:latest'
+  env:
+    DNS_PROVIDER: ${{ inputs.DNS_PROVIDER }}
+    DURATION_BEFORE_EXPIRY: ${{ inputs.DURATION_BEFORE_EXPIRY }}
+    ENTRUST_API_CERTIFICATE: ${{ inputs.ENTRUST_API_CERTIFICATE }}
+    ENTRUST_API_PRIVATE_KEY: ${{ inputs.ENTRUST_API_PRIVATE_KEY }}
+    ENTRUST_API_USERNAME: ${{ inputs.ENTRUST_API_USERNAME }}
+    ENTRUST_API_PASSEWORD: ${{ inputs.ENTRUST_API_PASSEWORD }}
+
+#--ENV--
