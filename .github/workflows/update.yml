@@ -13,12 +13,17 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Update Action config
+      - name: Sync action config with providers
         run: |
           ./update.sh
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@6bb739433928fbc2bdc635d41105e124d0dce021
         with:
-          title: Update Action config
+          title: Sync GitHub Action config with DNS providers
+          body: |
+            Sync GitHub Action config with options supported by DNS providers in https://github.com/EntrustCorporation/dv
           labels: config, automated pr
+          commit-message: Sync GitHub Action config with DNS providers
+          branch: auto-update-action-config
+          delete-branch: true
