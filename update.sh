@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git clone --depth 1 https://github.com/digitorus/dv.git /tmp/dv
+git clone --depth 1 https://github.com/entrustcorporation/dv.git /tmp/dv
 
 # Create GitHub action inputs
 grep -h -E '^\s+[A-Z0-9]+(_[A-Z0-9])+' /tmp/dv/providers/**/*.toml | sort -b -u -k1,1 | awk '{split($0,a,"="); printf "  %s:\n    description: %s\n    required: false\n", $1, a[2]}' > /tmp/dv/settings.yml

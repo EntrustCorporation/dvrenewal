@@ -65,7 +65,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: digitorus/dvrenewal@main
+      - uses: entrustcorporation/dvrenewal@main
         with:
           DNS_PROVIDER: cloudflare
           CLOUDFLARE_DNS_API_TOKEN: ${{ secrets.CLOUDFLARE_DNS_API_TOKEN }}
