@@ -1740,7 +1740,7 @@ inputs:
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/entrustcorporation/dv/dv:1.0.3'
+  image: 'docker://ghcr.io/entrustcorporation/dv/dv:1.0.4'
   env:
     DNS_PROVIDER: ${{ inputs.DNS_PROVIDER }}
     DURATION_BEFORE_EXPIRY: ${{ inputs.DURATION_BEFORE_EXPIRY }}
