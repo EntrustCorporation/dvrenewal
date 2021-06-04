@@ -1,6 +1,6 @@
-name: Domain Validation
-description: Automatically peform Domain Control Validation for Certificate Authorities using DNS. Currently supporting Entrust.
-author: vanbroup
+name: Entrust Domain Control Validation
+description: Automatically peform Domain Control Validation for domains in your Entrust account using DNS.
+author: EntrustCorporation
 branding:
   icon: 'refresh-cw'  
   color: 'purple'
