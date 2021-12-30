@@ -78,11 +78,32 @@ inputs:
   ALICLOUD_PROPAGATION_TIMEOUT:
     description:  "Maximum waiting time for DNS propagation"
     required: false
+  ALICLOUD_RAM_ROLE:
+    description:  "Your instance RAM role (https://www.alibabacloud.com/help/doc-detail/54579.htm)"
+    required: false
   ALICLOUD_SECRET_KEY:
     description:  "Access Key secret"
     required: false
+  ALICLOUD_SECURITY_TOKEN:
+    description:  "STS Security Token (optional)"
+    required: false
   ALICLOUD_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  ALL_INKL_API_KEY:
+    description:  "API login"
+    required: false
+  ALL_INKL_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  ALL_INKL_PASSWORD:
+    description:  "API password"
+    required: false
+  ALL_INKL_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  ALL_INKL_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
     required: false
   API_SVC:
     description:  "https://joker.com/faq/content/6/496/en/let_s-encrypt-support.html"
@@ -145,10 +166,10 @@ inputs:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   AWS_ACCESS_KEY_ID:
-    description:  "Access key ID"
+    description:  "Managed by the AWS client. Access key ID (`AWS_ACCESS_KEY_ID_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
     required: false
   AWS_HOSTED_ZONE_ID:
-    description:  "Override the hosted zone ID"
+    description:  "Override the hosted zone ID."
     required: false
   AWS_MAX_RETRIES:
     description:  "The number of maximum returns the service will use to make an individual API request"
@@ -166,10 +187,13 @@ inputs:
     description:  "Managed by the AWS client (`AWS_REGION_FILE` is not supported)"
     required: false
   AWS_SDK_LOAD_CONFIG:
-    description:  "Retrieve the region from the CLI config file (`AWS_SDK_LOAD_CONFIG_FILE` is not supported)"
+    description:  "Managed by the AWS client. Retrieve the region from the CLI config file (`AWS_SDK_LOAD_CONFIG_FILE` is not supported)"
     required: false
   AWS_SECRET_ACCESS_KEY:
-    description:  "Secret access key"
+    description:  "Managed by the AWS client. Secret access key (`AWS_SECRET_ACCESS_KEY_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
+    required: false
+  AWS_SHARED_CREDENTIALS_FILE:
+    description:  "Managed by the AWS client. Shared credentials file."
     required: false
   AWS_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
@@ -203,6 +227,9 @@ inputs:
     required: false
   AZURE_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  AZURE_ZONE_NAME:
+    description:  "Zone name to use inside Azure DNS service to add the TXT record in"
     required: false
   BINDMAN_HTTP_TIMEOUT:
     description:  "API request timeout"
@@ -618,6 +645,21 @@ inputs:
   EASYDNS_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  EPIK_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  EPIK_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  EPIK_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  EPIK_SIGNATURE:
+    description:  "Epik API signature (https://registrar.epik.com/account/api-settings/)"
+    required: false
+  EPIK_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
   EXOSCALE_API_KEY:
     description:  "API key"
     required: false
@@ -637,6 +679,24 @@ inputs:
     description:  "Maximum waiting time for DNS propagation"
     required: false
   EXOSCALE_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  FREEMYIP_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  FREEMYIP_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  FREEMYIP_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  FREEMYIP_SEQUENCE_INTERVAL:
+    description:  "Time between sequential requests"
+    required: false
+  FREEMYIP_TOKEN:
+    description:  "Account token"
+    required: false
+  FREEMYIP_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   GANDIV5_API_KEY:
@@ -688,6 +748,21 @@ inputs:
     description:  "Account file path"
     required: false
   GCE_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  GCORE_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  GCORE_PERMANENT_API_TOKEN:
+    description:  "Permanent API tokene (https://gcorelabs.com/blog/permanent-api-token-explained/)"
+    required: false
+  GCORE_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  GCORE_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  GCORE_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   GLESYS_API_KEY:
@@ -758,6 +833,24 @@ inputs:
     required: false
   HOSTINGDE_ZONE_NAME:
     description:  "Zone name in ACE format"
+    required: false
+  HOSTTECH_API_KEY:
+    description:  "API login"
+    required: false
+  HOSTTECH_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  HOSTTECH_PASSWORD:
+    description:  "API password"
+    required: false
+  HOSTTECH_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  HOSTTECH_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  HOSTTECH_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   HTTPREQ_ENDPOINT:
     description:  "The URL of the server"
@@ -881,6 +974,24 @@ inputs:
     required: false
   INFOMANIAK_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge in seconds"
+    required: false
+  INTERNET_BS_API_KEY:
+    description:  "API key"
+    required: false
+  INTERNET_BS_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  INTERNET_BS_PASSWORD:
+    description:  "API password"
+    required: false
+  INTERNET_BS_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  INTERNET_BS_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  INTERNET_BS_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   INWX_PASSWORD:
     description:  "Password"
@@ -1153,6 +1264,36 @@ inputs:
     description:  "Token"
     required: false
   NETLIFY_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  NICMANAGER_API_EMAIL:
+    description:  "Email-based login"
+    required: false
+  NICMANAGER_API_LOGIN:
+    description:  "Login, used for Username-based login"
+    required: false
+  NICMANAGER_API_MODE:
+    description:  "mode: 'anycast' or 'zone' (default: 'anycast')"
+    required: false
+  NICMANAGER_API_OTP:
+    description:  "TOTP Secret (optional)"
+    required: false
+  NICMANAGER_API_PASSWORD:
+    description:  "Password, always required"
+    required: false
+  NICMANAGER_API_USERNAME:
+    description:  "Username, used for Username-based login"
+    required: false
+  NICMANAGER_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  NICMANAGER_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  NICMANAGER_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  NICMANAGER_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   NIFCLOUD_ACCESS_KEY_ID:
@@ -1527,6 +1668,24 @@ inputs:
   SIMPLY_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  SOFTLAYER_API_KEY:
+    description:  "Classic Infrastructure API key"
+    required: false
+  SOFTLAYER_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  SOFTLAYER_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  SOFTLAYER_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  SOFTLAYER_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  SOFTLAYER_USERNAME:
+    description:  "User name (IBM Cloud is <accountID>_<emailAddress>)"
+    required: false
   SONIC_API_KEY:
     description:  "API Key"
     required: false
@@ -1764,8 +1923,15 @@ runs:
     ALICLOUD_HTTP_TIMEOUT: ${{ inputs.ALICLOUD_HTTP_TIMEOUT }}
     ALICLOUD_POLLING_INTERVAL: ${{ inputs.ALICLOUD_POLLING_INTERVAL }}
     ALICLOUD_PROPAGATION_TIMEOUT: ${{ inputs.ALICLOUD_PROPAGATION_TIMEOUT }}
+    ALICLOUD_RAM_ROLE: ${{ inputs.ALICLOUD_RAM_ROLE }}
     ALICLOUD_SECRET_KEY: ${{ inputs.ALICLOUD_SECRET_KEY }}
+    ALICLOUD_SECURITY_TOKEN: ${{ inputs.ALICLOUD_SECURITY_TOKEN }}
     ALICLOUD_TTL: ${{ inputs.ALICLOUD_TTL }}
+    ALL_INKL_API_KEY: ${{ inputs.ALL_INKL_API_KEY }}
+    ALL_INKL_HTTP_TIMEOUT: ${{ inputs.ALL_INKL_HTTP_TIMEOUT }}
+    ALL_INKL_PASSWORD: ${{ inputs.ALL_INKL_PASSWORD }}
+    ALL_INKL_POLLING_INTERVAL: ${{ inputs.ALL_INKL_POLLING_INTERVAL }}
+    ALL_INKL_PROPAGATION_TIMEOUT: ${{ inputs.ALL_INKL_PROPAGATION_TIMEOUT }}
     API_SVC: ${{ inputs.API_SVC }}
     ARVANCLOUD_API_KEY: ${{ inputs.ARVANCLOUD_API_KEY }}
     ARVANCLOUD_HTTP_TIMEOUT: ${{ inputs.ARVANCLOUD_HTTP_TIMEOUT }}
@@ -1795,6 +1961,7 @@ runs:
     AWS_REGION: ${{ inputs.AWS_REGION }}
     AWS_SDK_LOAD_CONFIG: ${{ inputs.AWS_SDK_LOAD_CONFIG }}
     AWS_SECRET_ACCESS_KEY: ${{ inputs.AWS_SECRET_ACCESS_KEY }}
+    AWS_SHARED_CREDENTIALS_FILE: ${{ inputs.AWS_SHARED_CREDENTIALS_FILE }}
     AWS_TTL: ${{ inputs.AWS_TTL }}
     AZURE_CLIENT_ID: ${{ inputs.AZURE_CLIENT_ID }}
     AZURE_CLIENT_SECRET: ${{ inputs.AZURE_CLIENT_SECRET }}
@@ -1806,6 +1973,7 @@ runs:
     AZURE_SUBSCRIPTION_ID: ${{ inputs.AZURE_SUBSCRIPTION_ID }}
     AZURE_TENANT_ID: ${{ inputs.AZURE_TENANT_ID }}
     AZURE_TTL: ${{ inputs.AZURE_TTL }}
+    AZURE_ZONE_NAME: ${{ inputs.AZURE_ZONE_NAME }}
     BINDMAN_HTTP_TIMEOUT: ${{ inputs.BINDMAN_HTTP_TIMEOUT }}
     BINDMAN_MANAGER_ADDRESS: ${{ inputs.BINDMAN_MANAGER_ADDRESS }}
     BINDMAN_POLLING_INTERVAL: ${{ inputs.BINDMAN_POLLING_INTERVAL }}
@@ -1944,6 +2112,11 @@ runs:
     EASYDNS_SEQUENCE_INTERVAL: ${{ inputs.EASYDNS_SEQUENCE_INTERVAL }}
     EASYDNS_TOKEN: ${{ inputs.EASYDNS_TOKEN }}
     EASYDNS_TTL: ${{ inputs.EASYDNS_TTL }}
+    EPIK_HTTP_TIMEOUT: ${{ inputs.EPIK_HTTP_TIMEOUT }}
+    EPIK_POLLING_INTERVAL: ${{ inputs.EPIK_POLLING_INTERVAL }}
+    EPIK_PROPAGATION_TIMEOUT: ${{ inputs.EPIK_PROPAGATION_TIMEOUT }}
+    EPIK_SIGNATURE: ${{ inputs.EPIK_SIGNATURE }}
+    EPIK_TTL: ${{ inputs.EPIK_TTL }}
     EXOSCALE_API_KEY: ${{ inputs.EXOSCALE_API_KEY }}
     EXOSCALE_API_SECRET: ${{ inputs.EXOSCALE_API_SECRET }}
     EXOSCALE_ENDPOINT: ${{ inputs.EXOSCALE_ENDPOINT }}
@@ -1951,6 +2124,12 @@ runs:
     EXOSCALE_POLLING_INTERVAL: ${{ inputs.EXOSCALE_POLLING_INTERVAL }}
     EXOSCALE_PROPAGATION_TIMEOUT: ${{ inputs.EXOSCALE_PROPAGATION_TIMEOUT }}
     EXOSCALE_TTL: ${{ inputs.EXOSCALE_TTL }}
+    FREEMYIP_HTTP_TIMEOUT: ${{ inputs.FREEMYIP_HTTP_TIMEOUT }}
+    FREEMYIP_POLLING_INTERVAL: ${{ inputs.FREEMYIP_POLLING_INTERVAL }}
+    FREEMYIP_PROPAGATION_TIMEOUT: ${{ inputs.FREEMYIP_PROPAGATION_TIMEOUT }}
+    FREEMYIP_SEQUENCE_INTERVAL: ${{ inputs.FREEMYIP_SEQUENCE_INTERVAL }}
+    FREEMYIP_TOKEN: ${{ inputs.FREEMYIP_TOKEN }}
+    FREEMYIP_TTL: ${{ inputs.FREEMYIP_TTL }}
     GANDIV5_API_KEY: ${{ inputs.GANDIV5_API_KEY }}
     GANDIV5_HTTP_TIMEOUT: ${{ inputs.GANDIV5_HTTP_TIMEOUT }}
     GANDIV5_POLLING_INTERVAL: ${{ inputs.GANDIV5_POLLING_INTERVAL }}
@@ -1968,6 +2147,11 @@ runs:
     GCE_SERVICE_ACCOUNT: ${{ inputs.GCE_SERVICE_ACCOUNT }}
     GCE_SERVICE_ACCOUNT_FILE: ${{ inputs.GCE_SERVICE_ACCOUNT_FILE }}
     GCE_TTL: ${{ inputs.GCE_TTL }}
+    GCORE_HTTP_TIMEOUT: ${{ inputs.GCORE_HTTP_TIMEOUT }}
+    GCORE_PERMANENT_API_TOKEN: ${{ inputs.GCORE_PERMANENT_API_TOKEN }}
+    GCORE_POLLING_INTERVAL: ${{ inputs.GCORE_POLLING_INTERVAL }}
+    GCORE_PROPAGATION_TIMEOUT: ${{ inputs.GCORE_PROPAGATION_TIMEOUT }}
+    GCORE_TTL: ${{ inputs.GCORE_TTL }}
     GLESYS_API_KEY: ${{ inputs.GLESYS_API_KEY }}
     GLESYS_API_USER: ${{ inputs.GLESYS_API_USER }}
     GLESYS_HTTP_TIMEOUT: ${{ inputs.GLESYS_HTTP_TIMEOUT }}
@@ -1991,6 +2175,12 @@ runs:
     HOSTINGDE_PROPAGATION_TIMEOUT: ${{ inputs.HOSTINGDE_PROPAGATION_TIMEOUT }}
     HOSTINGDE_TTL: ${{ inputs.HOSTINGDE_TTL }}
     HOSTINGDE_ZONE_NAME: ${{ inputs.HOSTINGDE_ZONE_NAME }}
+    HOSTTECH_API_KEY: ${{ inputs.HOSTTECH_API_KEY }}
+    HOSTTECH_HTTP_TIMEOUT: ${{ inputs.HOSTTECH_HTTP_TIMEOUT }}
+    HOSTTECH_PASSWORD: ${{ inputs.HOSTTECH_PASSWORD }}
+    HOSTTECH_POLLING_INTERVAL: ${{ inputs.HOSTTECH_POLLING_INTERVAL }}
+    HOSTTECH_PROPAGATION_TIMEOUT: ${{ inputs.HOSTTECH_PROPAGATION_TIMEOUT }}
+    HOSTTECH_TTL: ${{ inputs.HOSTTECH_TTL }}
     HTTPREQ_ENDPOINT: ${{ inputs.HTTPREQ_ENDPOINT }}
     HTTPREQ_HTTP_TIMEOUT: ${{ inputs.HTTPREQ_HTTP_TIMEOUT }}
     HTTPREQ_MODE: ${{ inputs.HTTPREQ_MODE }}
@@ -2032,6 +2222,12 @@ runs:
     INFOMANIAK_POLLING_INTERVAL: ${{ inputs.INFOMANIAK_POLLING_INTERVAL }}
     INFOMANIAK_PROPAGATION_TIMEOUT: ${{ inputs.INFOMANIAK_PROPAGATION_TIMEOUT }}
     INFOMANIAK_TTL: ${{ inputs.INFOMANIAK_TTL }}
+    INTERNET_BS_API_KEY: ${{ inputs.INTERNET_BS_API_KEY }}
+    INTERNET_BS_HTTP_TIMEOUT: ${{ inputs.INTERNET_BS_HTTP_TIMEOUT }}
+    INTERNET_BS_PASSWORD: ${{ inputs.INTERNET_BS_PASSWORD }}
+    INTERNET_BS_POLLING_INTERVAL: ${{ inputs.INTERNET_BS_POLLING_INTERVAL }}
+    INTERNET_BS_PROPAGATION_TIMEOUT: ${{ inputs.INTERNET_BS_PROPAGATION_TIMEOUT }}
+    INTERNET_BS_TTL: ${{ inputs.INTERNET_BS_TTL }}
     INWX_PASSWORD: ${{ inputs.INWX_PASSWORD }}
     INWX_POLLING_INTERVAL: ${{ inputs.INWX_POLLING_INTERVAL }}
     INWX_PROPAGATION_TIMEOUT: ${{ inputs.INWX_PROPAGATION_TIMEOUT }}
@@ -2123,6 +2319,16 @@ runs:
     NETLIFY_PROPAGATION_TIMEOUT: ${{ inputs.NETLIFY_PROPAGATION_TIMEOUT }}
     NETLIFY_TOKEN: ${{ inputs.NETLIFY_TOKEN }}
     NETLIFY_TTL: ${{ inputs.NETLIFY_TTL }}
+    NICMANAGER_API_EMAIL: ${{ inputs.NICMANAGER_API_EMAIL }}
+    NICMANAGER_API_LOGIN: ${{ inputs.NICMANAGER_API_LOGIN }}
+    NICMANAGER_API_MODE: ${{ inputs.NICMANAGER_API_MODE }}
+    NICMANAGER_API_OTP: ${{ inputs.NICMANAGER_API_OTP }}
+    NICMANAGER_API_PASSWORD: ${{ inputs.NICMANAGER_API_PASSWORD }}
+    NICMANAGER_API_USERNAME: ${{ inputs.NICMANAGER_API_USERNAME }}
+    NICMANAGER_HTTP_TIMEOUT: ${{ inputs.NICMANAGER_HTTP_TIMEOUT }}
+    NICMANAGER_POLLING_INTERVAL: ${{ inputs.NICMANAGER_POLLING_INTERVAL }}
+    NICMANAGER_PROPAGATION_TIMEOUT: ${{ inputs.NICMANAGER_PROPAGATION_TIMEOUT }}
+    NICMANAGER_TTL: ${{ inputs.NICMANAGER_TTL }}
     NIFCLOUD_ACCESS_KEY_ID: ${{ inputs.NIFCLOUD_ACCESS_KEY_ID }}
     NIFCLOUD_HTTP_TIMEOUT: ${{ inputs.NIFCLOUD_HTTP_TIMEOUT }}
     NIFCLOUD_POLLING_INTERVAL: ${{ inputs.NIFCLOUD_POLLING_INTERVAL }}
@@ -2247,6 +2453,12 @@ runs:
     SIMPLY_POLLING_INTERVAL: ${{ inputs.SIMPLY_POLLING_INTERVAL }}
     SIMPLY_PROPAGATION_TIMEOUT: ${{ inputs.SIMPLY_PROPAGATION_TIMEOUT }}
     SIMPLY_TTL: ${{ inputs.SIMPLY_TTL }}
+    SOFTLAYER_API_KEY: ${{ inputs.SOFTLAYER_API_KEY }}
+    SOFTLAYER_POLLING_INTERVAL: ${{ inputs.SOFTLAYER_POLLING_INTERVAL }}
+    SOFTLAYER_PROPAGATION_TIMEOUT: ${{ inputs.SOFTLAYER_PROPAGATION_TIMEOUT }}
+    SOFTLAYER_TIMEOUT: ${{ inputs.SOFTLAYER_TIMEOUT }}
+    SOFTLAYER_TTL: ${{ inputs.SOFTLAYER_TTL }}
+    SOFTLAYER_USERNAME: ${{ inputs.SOFTLAYER_USERNAME }}
     SONIC_API_KEY: ${{ inputs.SONIC_API_KEY }}
     SONIC_HTTP_TIMEOUT: ${{ inputs.SONIC_HTTP_TIMEOUT }}
     SONIC_POLLING_INTERVAL: ${{ inputs.SONIC_POLLING_INTERVAL }}
