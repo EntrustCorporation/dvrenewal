@@ -90,14 +90,14 @@ inputs:
   ALICLOUD_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
-  ALL_INKL_API_KEY:
-    description:  "API login"
-    required: false
   ALL_INKL_HTTP_TIMEOUT:
     description:  "API request timeout"
     required: false
+  ALL_INKL_LOGIN:
+    description:  "KAS login"
+    required: false
   ALL_INKL_PASSWORD:
-    description:  "API password"
+    description:  "KAS password"
     required: false
   ALL_INKL_POLLING_INTERVAL:
     description:  "Time between DNS propagation check"
@@ -123,11 +123,11 @@ inputs:
   ARVANCLOUD_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  AURORA_API_KEY:
+    description:  "API key or username to used"
+    required: false
   AURORA_ENDPOINT:
     description:  "API endpoint URL"
-    required: false
-  AURORA_KEY:
-    description:  "User API key"
     required: false
   AURORA_POLLING_INTERVAL:
     description:  "Time between DNS propagation check"
@@ -135,11 +135,11 @@ inputs:
   AURORA_PROPAGATION_TIMEOUT:
     description:  "Maximum waiting time for DNS propagation"
     required: false
+  AURORA_SECRET:
+    description:  "Secret password to be used"
+    required: false
   AURORA_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
-    required: false
-  AURORA_USER_ID:
-    description:  "User ID"
     required: false
   AUTODNS_API_PASSWORD:
     description:  "User Password"
@@ -167,6 +167,9 @@ inputs:
     required: false
   AWS_ACCESS_KEY_ID:
     description:  "Managed by the AWS client. Access key ID (`AWS_ACCESS_KEY_ID_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
+    required: false
+  AWS_ASSUME_ROLE_ARN:
+    description:  "Managed by the AWS Role ARN (`AWS_ASSUME_ROLE_ARN` is not supported)"
     required: false
   AWS_HOSTED_ZONE_ID:
     description:  "Override the hosted zone ID."
@@ -212,6 +215,9 @@ inputs:
     required: false
   AZURE_POLLING_INTERVAL:
     description:  "Time between DNS propagation check"
+    required: false
+  AZURE_PRIVATE_ZONE:
+    description:  "Set to true to use Azure Private DNS Zones and not public"
     required: false
   AZURE_PROPAGATION_TIMEOUT:
     description:  "Maximum waiting time for DNS propagation"
@@ -270,6 +276,36 @@ inputs:
   BLUECAT_USER_NAME:
     description:  "API username"
     required: false
+  BRANDIT_API_KEY:
+    description:  "The API key"
+    required: false
+  BRANDIT_API_USERNAME:
+    description:  "The API username"
+    required: false
+  BRANDIT_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  BRANDIT_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  BRANDIT_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  BRANDIT_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  BUNNY_API_KEY:
+    description:  "API key"
+    required: false
+  BUNNY_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  BUNNY_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  BUNNY_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
   CF_API_EMAIL:
     description:  "Account email"
     required: false
@@ -298,6 +334,18 @@ inputs:
     description:  "API token"
     required: false
   CHECKDOMAIN_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  CIVO_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  CIVO_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  CIVO_TOKEN:
+    description:  "Authentication token"
+    required: false
+  CIVO_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   CLOUDDNS_CLIENT_ID:
@@ -426,6 +474,24 @@ inputs:
   CONSTELLIX_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  DERAK_API_KEY:
+    description:  "The API key"
+    required: false
+  DERAK_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  DERAK_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  DERAK_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  DERAK_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  DERAK_WEBSITE_ID:
+    description:  "Force the zone/website ID"
+    required: false
   DESEC_HTTP_TIMEOUT:
     description:  "API request timeout"
     required: false
@@ -449,6 +515,21 @@ inputs:
     required: false
   DESIGNATE_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  DNSHOMEDE_CREDENTIALS:
+    description:  "Comma-separated list of domain:password credential pairs"
+    required: false
+  DNSHOMEDE_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  DNSHOMEDE_POLLING_INTERVAL:
+    description:  "Time between DNS propagation checks"
+    required: false
+  DNSHOMEDE_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation; defaults to 300s (5 minutes)"
+    required: false
+  DNSHOMEDE_SEQUENCE_INTERVAL:
+    description:  "Time between sequential requests"
     required: false
   DNSIMPLE_BASE_URL:
     description:  "API endpoint URL"
@@ -536,6 +617,9 @@ inputs:
     required: false
   DOMENESHOP_PROPAGATION_TIMEOUT:
     description:  "Maximum waiting time for DNS propagation"
+    required: false
+  DO_API_URL:
+    description:  "The URL of the API"
     required: false
   DO_AUTH_TOKEN:
     description:  "Authentication token"
@@ -665,6 +749,9 @@ inputs:
     required: false
   EXOSCALE_API_SECRET:
     description:  "API secret"
+    required: false
+  EXOSCALE_API_ZONE:
+    description:  "API zone"
     required: false
   EXOSCALE_ENDPOINT:
     description:  "API endpoint URL"
@@ -801,6 +888,18 @@ inputs:
   GODADDY_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  GOOGLE_DOMAINS_ACCESS_TOKEN:
+    description:  "Access token"
+    required: false
+  GOOGLE_DOMAINS_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  GOOGLE_DOMAINS_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  GOOGLE_DOMAINS_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
   HETZNER_API_KEY:
     description:  "API key"
     required: false
@@ -915,6 +1014,24 @@ inputs:
   IIJ_DO_SERVICE_CODE:
     description:  "DO service code"
     required: false
+  IIJ_DPF_API_ENDPOINT:
+    description:  "API endpoint URL, defaults to https://api.dns-platform.jp/dpf/v1"
+    required: false
+  IIJ_DPF_API_TOKEN:
+    description:  "API token"
+    required: false
+  IIJ_DPF_DPM_SERVICE_CODE:
+    description:  "IIJ Managed DNS Service's service code"
+    required: false
+  IIJ_DPF_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check, defaults to 5 second"
+    required: false
+  IIJ_DPF_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation, defaults to 660 second"
+    required: false
+  IIJ_DPF_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge, default to 300"
+    required: false
   IIJ_POLLING_INTERVAL:
     description:  "Time between DNS propagation check"
     required: false
@@ -923,6 +1040,9 @@ inputs:
     required: false
   IIJ_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  INFOBLOX_DNS_VIEW:
+    description:  "The view for the TXT records, default: External"
     required: false
   INFOBLOX_HOST:
     description:  "Host URI"
@@ -948,11 +1068,8 @@ inputs:
   INFOBLOX_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
-  INFOBLOX_USER:
+  INFOBLOX_USERNAME:
     description:  "Account Username"
-    required: false
-  INFOBLOX_VIEW:
-    description:  "The view for the TXT records, default: External"
     required: false
   INFOBLOX_WAPI_VERSION:
     description:  "The version of WAPI being used, default: 2.11"
@@ -1029,6 +1146,24 @@ inputs:
   IONOS_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  IWANTMYNAME_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  IWANTMYNAME_PASSWORD:
+    description:  "API password"
+    required: false
+  IWANTMYNAME_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  IWANTMYNAME_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  IWANTMYNAME_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  IWANTMYNAME_USERNAME:
+    description:  "API username"
+    required: false
   JOKER_API_KEY:
     description:  "API key (only with DMAPI mode)"
     required: false
@@ -1055,6 +1190,21 @@ inputs:
     required: false
   JOKER_USERNAME:
     description:  "Joker.com username"
+    required: false
+  LIARA_API_KEY:
+    description:  "The API key"
+    required: false
+  LIARA_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  LIARA_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  LIARA_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  LIARA_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   LIGHTSAIL_POLLING_INTERVAL:
     description:  "Time between DNS propagation check"
@@ -1103,6 +1253,9 @@ inputs:
     required: false
   LOOPIA_API_PASSWORD:
     description:  "API password"
+    required: false
+  LOOPIA_API_URL:
+    description:  "API endpoint. Ex: https://api.loopia.se/RPCSERV or https://api.loopia.rs/RPCSERV"
     required: false
   LOOPIA_API_USER:
     description:  "API username"
@@ -1230,6 +1383,27 @@ inputs:
   NAMESILO_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge, should be in [3600, 2592000]"
     required: false
+  NEARLYFREESPEECH_API_KEY:
+    description:  "API Key for API requests"
+    required: false
+  NEARLYFREESPEECH_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  NEARLYFREESPEECH_LOGIN:
+    description:  "Username for API requests"
+    required: false
+  NEARLYFREESPEECH_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  NEARLYFREESPEECH_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  NEARLYFREESPEECH_SEQUENCE_INTERVAL:
+    description:  "Time between sequential requests"
+    required: false
+  NEARLYFREESPEECH_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
   NETCUP_API_KEY:
     description:  "API key"
     required: false
@@ -1327,6 +1501,21 @@ inputs:
     description:  "API token"
     required: false
   NJALLA_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  NODION_API_TOKEN:
+    description:  "The API token"
+    required: false
+  NODION_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  NODION_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  NODION_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  NODION_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   NS1_API_KEY:
@@ -1479,6 +1668,27 @@ inputs:
   PDNS_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  PLESK_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  PLESK_PASSWORD:
+    description:  "API password"
+    required: false
+  PLESK_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  PLESK_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  PLESK_SERVER_BASE_URL:
+    description:  "Base URL of the server (ex: https://plesk.myserver.com:8443)"
+    required: false
+  PLESK_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  PLESK_USERNAME:
+    description:  "API username"
+    required: false
   PORKBUN_API_KEY:
     description:  "API key"
     required: false
@@ -1573,6 +1783,21 @@ inputs:
     description:  "Maximum waiting time for DNS propagation"
     required: false
   RIMUHOSTING_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  SAFEDNS_AUTH_TOKEN:
+    description:  "Authentication token"
+    required: false
+  SAFEDNS_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  SAFEDNS_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  SAFEDNS_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  SAFEDNS_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   SAKURACLOUD_ACCESS_TOKEN:
@@ -1725,6 +1950,30 @@ inputs:
   STACKPATH_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  TENCENTCLOUD_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  TENCENTCLOUD_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  TENCENTCLOUD_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  TENCENTCLOUD_REGION:
+    description:  "Region"
+    required: false
+  TENCENTCLOUD_SECRET_ID:
+    description:  "Access key ID"
+    required: false
+  TENCENTCLOUD_SECRET_KEY:
+    description:  "Access Key secret"
+    required: false
+  TENCENTCLOUD_SESSION_TOKEN:
+    description:  "Access Key token"
+    required: false
+  TENCENTCLOUD_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
   TRANSIP_ACCOUNT_NAME:
     description:  "Account name"
     required: false
@@ -1740,6 +1989,39 @@ inputs:
   TRANSIP_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  ULTRADNS_ENDPOINT:
+    description:  "API endpoint URL, defaults to https://api.ultradns.com/"
+    required: false
+  ULTRADNS_PASSWORD:
+    description:  "API Password"
+    required: false
+  ULTRADNS_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  ULTRADNS_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  ULTRADNS_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  ULTRADNS_USERNAME:
+    description:  "API Username"
+    required: false
+  VARIOMEDIA_API_TOKEN:
+    description:  "API token"
+    required: false
+  VARIOMEDIA_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  VARIOMEDIA_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  VARIOMEDIA_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  VARIOMEDIA_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
   VEGADNS_POLLING_INTERVAL:
     description:  "Time between DNS propagation check"
     required: false
@@ -1751,6 +2033,24 @@ inputs:
     required: false
   VEGADNS_URL:
     description:  "API endpoint URL"
+    required: false
+  VERCEL_API_TOKEN:
+    description:  "Authentication token"
+    required: false
+  VERCEL_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  VERCEL_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  VERCEL_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  VERCEL_TEAM_ID:
+    description:  "Team ID (ex: team_xxxxxxxxxxxxxxxxxxxxxxxx)"
+    required: false
+  VERCEL_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   VERSIO_ENDPOINT:
     description:  "The endpoint URL of the API Server"
@@ -1794,6 +2094,33 @@ inputs:
   VINYLDNS_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  VK_CLOUD_DNS_ENDPOINT="URL:
+    description: "URL of DNS API. Defaults to https://mcs.mail.ru/public-dns but can be changed for usage with private clouds"
+    required: false
+  VK_CLOUD_DOMAIN_NAME="Openstack:
+    description: "Openstack users domain name. Defaults to `users` but can be changed for usage with private clouds"
+    required: false
+  VK_CLOUD_IDENTITY_ENDPOINT="URL:
+    description: "URL of OpenStack Auth API, Defaults to https://infra.mail.ru:35357/v3/ but can be changed for usage with private clouds"
+    required: false
+  VK_CLOUD_PASSWORD:
+    description:  "Password for VK Cloud account"
+    required: false
+  VK_CLOUD_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  VK_CLOUD_PROJECT_ID:
+    description:  "String ID of project in VK Cloud"
+    required: false
+  VK_CLOUD_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  VK_CLOUD_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  VK_CLOUD_USERNAME:
+    description:  "Email of VK Cloud account"
+    required: false
   VSCALE_API_TOKEN:
     description:  "API token"
     required: false
@@ -1827,6 +2154,27 @@ inputs:
   VULTR_TTL:
     description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
+  WEBSUPPORT_API_KEY:
+    description:  "API key"
+    required: false
+  WEBSUPPORT_HTTP_TIMEOUT:
+    description:  "API request timeout"
+    required: false
+  WEBSUPPORT_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  WEBSUPPORT_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  WEBSUPPORT_SECRET:
+    description:  "API secret"
+    required: false
+  WEBSUPPORT_SEQUENCE_INTERVAL:
+    description:  "Time between sequential requests"
+    required: false
+  WEBSUPPORT_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
+    required: false
   WEDOS_HTTP_TIMEOUT:
     description:  "API request timeout"
     required: false
@@ -1844,6 +2192,21 @@ inputs:
     required: false
   WEDOS_WAPI_PASSWORD:
     description:  "Password needs to be generated and IP allowed in the admin interface"
+    required: false
+  YANDEX_CLOUD_FOLDER_ID:
+    description:  "The string id of folder (aka project) in Yandex Cloud"
+    required: false
+  YANDEX_CLOUD_IAM_TOKEN:
+    description:  "The base64 encoded json which contains inforamtion about iam token of serivce account with `dns.admin` permissions"
+    required: false
+  YANDEX_CLOUD_POLLING_INTERVAL:
+    description:  "Time between DNS propagation check"
+    required: false
+  YANDEX_CLOUD_PROPAGATION_TIMEOUT:
+    description:  "Maximum waiting time for DNS propagation"
+    required: false
+  YANDEX_CLOUD_TTL:
+    description:  "The TTL of the TXT record used for the DNS challenge"
     required: false
   YANDEX_HTTP_TIMEOUT:
     description:  "API request timeout"
@@ -1927,8 +2290,8 @@ runs:
     ALICLOUD_SECRET_KEY: ${{ inputs.ALICLOUD_SECRET_KEY }}
     ALICLOUD_SECURITY_TOKEN: ${{ inputs.ALICLOUD_SECURITY_TOKEN }}
     ALICLOUD_TTL: ${{ inputs.ALICLOUD_TTL }}
-    ALL_INKL_API_KEY: ${{ inputs.ALL_INKL_API_KEY }}
     ALL_INKL_HTTP_TIMEOUT: ${{ inputs.ALL_INKL_HTTP_TIMEOUT }}
+    ALL_INKL_LOGIN: ${{ inputs.ALL_INKL_LOGIN }}
     ALL_INKL_PASSWORD: ${{ inputs.ALL_INKL_PASSWORD }}
     ALL_INKL_POLLING_INTERVAL: ${{ inputs.ALL_INKL_POLLING_INTERVAL }}
     ALL_INKL_PROPAGATION_TIMEOUT: ${{ inputs.ALL_INKL_PROPAGATION_TIMEOUT }}
@@ -1938,12 +2301,12 @@ runs:
     ARVANCLOUD_POLLING_INTERVAL: ${{ inputs.ARVANCLOUD_POLLING_INTERVAL }}
     ARVANCLOUD_PROPAGATION_TIMEOUT: ${{ inputs.ARVANCLOUD_PROPAGATION_TIMEOUT }}
     ARVANCLOUD_TTL: ${{ inputs.ARVANCLOUD_TTL }}
+    AURORA_API_KEY: ${{ inputs.AURORA_API_KEY }}
     AURORA_ENDPOINT: ${{ inputs.AURORA_ENDPOINT }}
-    AURORA_KEY: ${{ inputs.AURORA_KEY }}
     AURORA_POLLING_INTERVAL: ${{ inputs.AURORA_POLLING_INTERVAL }}
     AURORA_PROPAGATION_TIMEOUT: ${{ inputs.AURORA_PROPAGATION_TIMEOUT }}
+    AURORA_SECRET: ${{ inputs.AURORA_SECRET }}
     AURORA_TTL: ${{ inputs.AURORA_TTL }}
-    AURORA_USER_ID: ${{ inputs.AURORA_USER_ID }}
     AUTODNS_API_PASSWORD: ${{ inputs.AUTODNS_API_PASSWORD }}
     AUTODNS_API_USER: ${{ inputs.AUTODNS_API_USER }}
     AUTODNS_CONTEXT: ${{ inputs.AUTODNS_CONTEXT }}
@@ -1953,6 +2316,7 @@ runs:
     AUTODNS_PROPAGATION_TIMEOUT: ${{ inputs.AUTODNS_PROPAGATION_TIMEOUT }}
     AUTODNS_TTL: ${{ inputs.AUTODNS_TTL }}
     AWS_ACCESS_KEY_ID: ${{ inputs.AWS_ACCESS_KEY_ID }}
+    AWS_ASSUME_ROLE_ARN: ${{ inputs.AWS_ASSUME_ROLE_ARN }}
     AWS_HOSTED_ZONE_ID: ${{ inputs.AWS_HOSTED_ZONE_ID }}
     AWS_MAX_RETRIES: ${{ inputs.AWS_MAX_RETRIES }}
     AWS_POLLING_INTERVAL: ${{ inputs.AWS_POLLING_INTERVAL }}
@@ -1968,6 +2332,7 @@ runs:
     AZURE_ENVIRONMENT: ${{ inputs.AZURE_ENVIRONMENT }}
     AZURE_METADATA_ENDPOINT: ${{ inputs.AZURE_METADATA_ENDPOINT }}
     AZURE_POLLING_INTERVAL: ${{ inputs.AZURE_POLLING_INTERVAL }}
+    AZURE_PRIVATE_ZONE: ${{ inputs.AZURE_PRIVATE_ZONE }}
     AZURE_PROPAGATION_TIMEOUT: ${{ inputs.AZURE_PROPAGATION_TIMEOUT }}
     AZURE_RESOURCE_GROUP: ${{ inputs.AZURE_RESOURCE_GROUP }}
     AZURE_SUBSCRIPTION_ID: ${{ inputs.AZURE_SUBSCRIPTION_ID }}
@@ -1987,6 +2352,16 @@ runs:
     BLUECAT_SERVER_URL: ${{ inputs.BLUECAT_SERVER_URL }}
     BLUECAT_TTL: ${{ inputs.BLUECAT_TTL }}
     BLUECAT_USER_NAME: ${{ inputs.BLUECAT_USER_NAME }}
+    BRANDIT_API_KEY: ${{ inputs.BRANDIT_API_KEY }}
+    BRANDIT_API_USERNAME: ${{ inputs.BRANDIT_API_USERNAME }}
+    BRANDIT_HTTP_TIMEOUT: ${{ inputs.BRANDIT_HTTP_TIMEOUT }}
+    BRANDIT_POLLING_INTERVAL: ${{ inputs.BRANDIT_POLLING_INTERVAL }}
+    BRANDIT_PROPAGATION_TIMEOUT: ${{ inputs.BRANDIT_PROPAGATION_TIMEOUT }}
+    BRANDIT_TTL: ${{ inputs.BRANDIT_TTL }}
+    BUNNY_API_KEY: ${{ inputs.BUNNY_API_KEY }}
+    BUNNY_POLLING_INTERVAL: ${{ inputs.BUNNY_POLLING_INTERVAL }}
+    BUNNY_PROPAGATION_TIMEOUT: ${{ inputs.BUNNY_PROPAGATION_TIMEOUT }}
+    BUNNY_TTL: ${{ inputs.BUNNY_TTL }}
     CF_API_EMAIL: ${{ inputs.CF_API_EMAIL }}
     CF_API_KEY: ${{ inputs.CF_API_KEY }}
     CF_DNS_API_TOKEN: ${{ inputs.CF_DNS_API_TOKEN }}
@@ -1997,6 +2372,10 @@ runs:
     CHECKDOMAIN_PROPAGATION_TIMEOUT: ${{ inputs.CHECKDOMAIN_PROPAGATION_TIMEOUT }}
     CHECKDOMAIN_TOKEN: ${{ inputs.CHECKDOMAIN_TOKEN }}
     CHECKDOMAIN_TTL: ${{ inputs.CHECKDOMAIN_TTL }}
+    CIVO_POLLING_INTERVAL: ${{ inputs.CIVO_POLLING_INTERVAL }}
+    CIVO_PROPAGATION_TIMEOUT: ${{ inputs.CIVO_PROPAGATION_TIMEOUT }}
+    CIVO_TOKEN: ${{ inputs.CIVO_TOKEN }}
+    CIVO_TTL: ${{ inputs.CIVO_TTL }}
     CLOUDDNS_CLIENT_ID: ${{ inputs.CLOUDDNS_CLIENT_ID }}
     CLOUDDNS_EMAIL: ${{ inputs.CLOUDDNS_EMAIL }}
     CLOUDDNS_HTTP_TIMEOUT: ${{ inputs.CLOUDDNS_HTTP_TIMEOUT }}
@@ -2039,6 +2418,12 @@ runs:
     CONSTELLIX_PROPAGATION_TIMEOUT: ${{ inputs.CONSTELLIX_PROPAGATION_TIMEOUT }}
     CONSTELLIX_SECRET_KEY: ${{ inputs.CONSTELLIX_SECRET_KEY }}
     CONSTELLIX_TTL: ${{ inputs.CONSTELLIX_TTL }}
+    DERAK_API_KEY: ${{ inputs.DERAK_API_KEY }}
+    DERAK_HTTP_TIMEOUT: ${{ inputs.DERAK_HTTP_TIMEOUT }}
+    DERAK_POLLING_INTERVAL: ${{ inputs.DERAK_POLLING_INTERVAL }}
+    DERAK_PROPAGATION_TIMEOUT: ${{ inputs.DERAK_PROPAGATION_TIMEOUT }}
+    DERAK_TTL: ${{ inputs.DERAK_TTL }}
+    DERAK_WEBSITE_ID: ${{ inputs.DERAK_WEBSITE_ID }}
     DESEC_HTTP_TIMEOUT: ${{ inputs.DESEC_HTTP_TIMEOUT }}
     DESEC_POLLING_INTERVAL: ${{ inputs.DESEC_POLLING_INTERVAL }}
     DESEC_PROPAGATION_TIMEOUT: ${{ inputs.DESEC_PROPAGATION_TIMEOUT }}
@@ -2047,6 +2432,11 @@ runs:
     DESIGNATE_POLLING_INTERVAL: ${{ inputs.DESIGNATE_POLLING_INTERVAL }}
     DESIGNATE_PROPAGATION_TIMEOUT: ${{ inputs.DESIGNATE_PROPAGATION_TIMEOUT }}
     DESIGNATE_TTL: ${{ inputs.DESIGNATE_TTL }}
+    DNSHOMEDE_CREDENTIALS: ${{ inputs.DNSHOMEDE_CREDENTIALS }}
+    DNSHOMEDE_HTTP_TIMEOUT: ${{ inputs.DNSHOMEDE_HTTP_TIMEOUT }}
+    DNSHOMEDE_POLLING_INTERVAL: ${{ inputs.DNSHOMEDE_POLLING_INTERVAL }}
+    DNSHOMEDE_PROPAGATION_TIMEOUT: ${{ inputs.DNSHOMEDE_PROPAGATION_TIMEOUT }}
+    DNSHOMEDE_SEQUENCE_INTERVAL: ${{ inputs.DNSHOMEDE_SEQUENCE_INTERVAL }}
     DNSIMPLE_BASE_URL: ${{ inputs.DNSIMPLE_BASE_URL }}
     DNSIMPLE_OAUTH_TOKEN: ${{ inputs.DNSIMPLE_OAUTH_TOKEN }}
     DNSIMPLE_POLLING_INTERVAL: ${{ inputs.DNSIMPLE_POLLING_INTERVAL }}
@@ -2076,6 +2466,7 @@ runs:
     DOMENESHOP_HTTP_TIMEOUT: ${{ inputs.DOMENESHOP_HTTP_TIMEOUT }}
     DOMENESHOP_POLLING_INTERVAL: ${{ inputs.DOMENESHOP_POLLING_INTERVAL }}
     DOMENESHOP_PROPAGATION_TIMEOUT: ${{ inputs.DOMENESHOP_PROPAGATION_TIMEOUT }}
+    DO_API_URL: ${{ inputs.DO_API_URL }}
     DO_AUTH_TOKEN: ${{ inputs.DO_AUTH_TOKEN }}
     DO_HTTP_TIMEOUT: ${{ inputs.DO_HTTP_TIMEOUT }}
     DO_POLLING_INTERVAL: ${{ inputs.DO_POLLING_INTERVAL }}
@@ -2119,6 +2510,7 @@ runs:
     EPIK_TTL: ${{ inputs.EPIK_TTL }}
     EXOSCALE_API_KEY: ${{ inputs.EXOSCALE_API_KEY }}
     EXOSCALE_API_SECRET: ${{ inputs.EXOSCALE_API_SECRET }}
+    EXOSCALE_API_ZONE: ${{ inputs.EXOSCALE_API_ZONE }}
     EXOSCALE_ENDPOINT: ${{ inputs.EXOSCALE_ENDPOINT }}
     EXOSCALE_HTTP_TIMEOUT: ${{ inputs.EXOSCALE_HTTP_TIMEOUT }}
     EXOSCALE_POLLING_INTERVAL: ${{ inputs.EXOSCALE_POLLING_INTERVAL }}
@@ -2164,6 +2556,10 @@ runs:
     GODADDY_POLLING_INTERVAL: ${{ inputs.GODADDY_POLLING_INTERVAL }}
     GODADDY_PROPAGATION_TIMEOUT: ${{ inputs.GODADDY_PROPAGATION_TIMEOUT }}
     GODADDY_TTL: ${{ inputs.GODADDY_TTL }}
+    GOOGLE_DOMAINS_ACCESS_TOKEN: ${{ inputs.GOOGLE_DOMAINS_ACCESS_TOKEN }}
+    GOOGLE_DOMAINS_HTTP_TIMEOUT: ${{ inputs.GOOGLE_DOMAINS_HTTP_TIMEOUT }}
+    GOOGLE_DOMAINS_POLLING_INTERVAL: ${{ inputs.GOOGLE_DOMAINS_POLLING_INTERVAL }}
+    GOOGLE_DOMAINS_PROPAGATION_TIMEOUT: ${{ inputs.GOOGLE_DOMAINS_PROPAGATION_TIMEOUT }}
     HETZNER_API_KEY: ${{ inputs.HETZNER_API_KEY }}
     HETZNER_HTTP_TIMEOUT: ${{ inputs.HETZNER_HTTP_TIMEOUT }}
     HETZNER_POLLING_INTERVAL: ${{ inputs.HETZNER_POLLING_INTERVAL }}
@@ -2202,9 +2598,16 @@ runs:
     IIJ_API_ACCESS_KEY: ${{ inputs.IIJ_API_ACCESS_KEY }}
     IIJ_API_SECRET_KEY: ${{ inputs.IIJ_API_SECRET_KEY }}
     IIJ_DO_SERVICE_CODE: ${{ inputs.IIJ_DO_SERVICE_CODE }}
+    IIJ_DPF_API_ENDPOINT: ${{ inputs.IIJ_DPF_API_ENDPOINT }}
+    IIJ_DPF_API_TOKEN: ${{ inputs.IIJ_DPF_API_TOKEN }}
+    IIJ_DPF_DPM_SERVICE_CODE: ${{ inputs.IIJ_DPF_DPM_SERVICE_CODE }}
+    IIJ_DPF_POLLING_INTERVAL: ${{ inputs.IIJ_DPF_POLLING_INTERVAL }}
+    IIJ_DPF_PROPAGATION_TIMEOUT: ${{ inputs.IIJ_DPF_PROPAGATION_TIMEOUT }}
+    IIJ_DPF_TTL: ${{ inputs.IIJ_DPF_TTL }}
     IIJ_POLLING_INTERVAL: ${{ inputs.IIJ_POLLING_INTERVAL }}
     IIJ_PROPAGATION_TIMEOUT: ${{ inputs.IIJ_PROPAGATION_TIMEOUT }}
     IIJ_TTL: ${{ inputs.IIJ_TTL }}
+    INFOBLOX_DNS_VIEW: ${{ inputs.INFOBLOX_DNS_VIEW }}
     INFOBLOX_HOST: ${{ inputs.INFOBLOX_HOST }}
     INFOBLOX_HTTP_TIMEOUT: ${{ inputs.INFOBLOX_HTTP_TIMEOUT }}
     INFOBLOX_PASSWORD: ${{ inputs.INFOBLOX_PASSWORD }}
@@ -2213,8 +2616,7 @@ runs:
     INFOBLOX_PROPAGATION_TIMEOUT: ${{ inputs.INFOBLOX_PROPAGATION_TIMEOUT }}
     INFOBLOX_SSL_VERIFY: ${{ inputs.INFOBLOX_SSL_VERIFY }}
     INFOBLOX_TTL: ${{ inputs.INFOBLOX_TTL }}
-    INFOBLOX_USER: ${{ inputs.INFOBLOX_USER }}
-    INFOBLOX_VIEW: ${{ inputs.INFOBLOX_VIEW }}
+    INFOBLOX_USERNAME: ${{ inputs.INFOBLOX_USERNAME }}
     INFOBLOX_WAPI_VERSION: ${{ inputs.INFOBLOX_WAPI_VERSION }}
     INFOMANIAK_ACCESS_TOKEN: ${{ inputs.INFOMANIAK_ACCESS_TOKEN }}
     INFOMANIAK_ENDPOINT: ${{ inputs.INFOMANIAK_ENDPOINT }}
@@ -2240,6 +2642,12 @@ runs:
     IONOS_POLLING_INTERVAL: ${{ inputs.IONOS_POLLING_INTERVAL }}
     IONOS_PROPAGATION_TIMEOUT: ${{ inputs.IONOS_PROPAGATION_TIMEOUT }}
     IONOS_TTL: ${{ inputs.IONOS_TTL }}
+    IWANTMYNAME_HTTP_TIMEOUT: ${{ inputs.IWANTMYNAME_HTTP_TIMEOUT }}
+    IWANTMYNAME_PASSWORD: ${{ inputs.IWANTMYNAME_PASSWORD }}
+    IWANTMYNAME_POLLING_INTERVAL: ${{ inputs.IWANTMYNAME_POLLING_INTERVAL }}
+    IWANTMYNAME_PROPAGATION_TIMEOUT: ${{ inputs.IWANTMYNAME_PROPAGATION_TIMEOUT }}
+    IWANTMYNAME_TTL: ${{ inputs.IWANTMYNAME_TTL }}
+    IWANTMYNAME_USERNAME: ${{ inputs.IWANTMYNAME_USERNAME }}
     JOKER_API_KEY: ${{ inputs.JOKER_API_KEY }}
     JOKER_API_MODE: ${{ inputs.JOKER_API_MODE }}
     JOKER_HTTP_TIMEOUT: ${{ inputs.JOKER_HTTP_TIMEOUT }}
@@ -2249,6 +2657,11 @@ runs:
     JOKER_SEQUENCE_INTERVAL: ${{ inputs.JOKER_SEQUENCE_INTERVAL }}
     JOKER_TTL: ${{ inputs.JOKER_TTL }}
     JOKER_USERNAME: ${{ inputs.JOKER_USERNAME }}
+    LIARA_API_KEY: ${{ inputs.LIARA_API_KEY }}
+    LIARA_HTTP_TIMEOUT: ${{ inputs.LIARA_HTTP_TIMEOUT }}
+    LIARA_POLLING_INTERVAL: ${{ inputs.LIARA_POLLING_INTERVAL }}
+    LIARA_PROPAGATION_TIMEOUT: ${{ inputs.LIARA_PROPAGATION_TIMEOUT }}
+    LIARA_TTL: ${{ inputs.LIARA_TTL }}
     LIGHTSAIL_POLLING_INTERVAL: ${{ inputs.LIGHTSAIL_POLLING_INTERVAL }}
     LIGHTSAIL_PROPAGATION_TIMEOUT: ${{ inputs.LIGHTSAIL_PROPAGATION_TIMEOUT }}
     LINODE_HTTP_TIMEOUT: ${{ inputs.LINODE_HTTP_TIMEOUT }}
@@ -2265,6 +2678,7 @@ runs:
     LIQUID_WEB_USERNAME: ${{ inputs.LIQUID_WEB_USERNAME }}
     LIQUID_WEB_ZONE: ${{ inputs.LIQUID_WEB_ZONE }}
     LOOPIA_API_PASSWORD: ${{ inputs.LOOPIA_API_PASSWORD }}
+    LOOPIA_API_URL: ${{ inputs.LOOPIA_API_URL }}
     LOOPIA_API_USER: ${{ inputs.LOOPIA_API_USER }}
     LOOPIA_HTTP_TIMEOUT: ${{ inputs.LOOPIA_HTTP_TIMEOUT }}
     LOOPIA_POLLING_INTERVAL: ${{ inputs.LOOPIA_POLLING_INTERVAL }}
@@ -2307,6 +2721,13 @@ runs:
     NAMESILO_POLLING_INTERVAL: ${{ inputs.NAMESILO_POLLING_INTERVAL }}
     NAMESILO_PROPAGATION_TIMEOUT: ${{ inputs.NAMESILO_PROPAGATION_TIMEOUT }}
     NAMESILO_TTL: ${{ inputs.NAMESILO_TTL }}
+    NEARLYFREESPEECH_API_KEY: ${{ inputs.NEARLYFREESPEECH_API_KEY }}
+    NEARLYFREESPEECH_HTTP_TIMEOUT: ${{ inputs.NEARLYFREESPEECH_HTTP_TIMEOUT }}
+    NEARLYFREESPEECH_LOGIN: ${{ inputs.NEARLYFREESPEECH_LOGIN }}
+    NEARLYFREESPEECH_POLLING_INTERVAL: ${{ inputs.NEARLYFREESPEECH_POLLING_INTERVAL }}
+    NEARLYFREESPEECH_PROPAGATION_TIMEOUT: ${{ inputs.NEARLYFREESPEECH_PROPAGATION_TIMEOUT }}
+    NEARLYFREESPEECH_SEQUENCE_INTERVAL: ${{ inputs.NEARLYFREESPEECH_SEQUENCE_INTERVAL }}
+    NEARLYFREESPEECH_TTL: ${{ inputs.NEARLYFREESPEECH_TTL }}
     NETCUP_API_KEY: ${{ inputs.NETCUP_API_KEY }}
     NETCUP_API_PASSWORD: ${{ inputs.NETCUP_API_PASSWORD }}
     NETCUP_CUSTOMER_NUMBER: ${{ inputs.NETCUP_CUSTOMER_NUMBER }}
@@ -2340,6 +2761,11 @@ runs:
     NJALLA_PROPAGATION_TIMEOUT: ${{ inputs.NJALLA_PROPAGATION_TIMEOUT }}
     NJALLA_TOKEN: ${{ inputs.NJALLA_TOKEN }}
     NJALLA_TTL: ${{ inputs.NJALLA_TTL }}
+    NODION_API_TOKEN: ${{ inputs.NODION_API_TOKEN }}
+    NODION_HTTP_TIMEOUT: ${{ inputs.NODION_HTTP_TIMEOUT }}
+    NODION_POLLING_INTERVAL: ${{ inputs.NODION_POLLING_INTERVAL }}
+    NODION_PROPAGATION_TIMEOUT: ${{ inputs.NODION_PROPAGATION_TIMEOUT }}
+    NODION_TTL: ${{ inputs.NODION_TTL }}
     NS1_API_KEY: ${{ inputs.NS1_API_KEY }}
     NS1_HTTP_TIMEOUT: ${{ inputs.NS1_HTTP_TIMEOUT }}
     NS1_POLLING_INTERVAL: ${{ inputs.NS1_POLLING_INTERVAL }}
@@ -2390,6 +2816,13 @@ runs:
     PDNS_PROPAGATION_TIMEOUT: ${{ inputs.PDNS_PROPAGATION_TIMEOUT }}
     PDNS_SERVER_NAME: ${{ inputs.PDNS_SERVER_NAME }}
     PDNS_TTL: ${{ inputs.PDNS_TTL }}
+    PLESK_HTTP_TIMEOUT: ${{ inputs.PLESK_HTTP_TIMEOUT }}
+    PLESK_PASSWORD: ${{ inputs.PLESK_PASSWORD }}
+    PLESK_POLLING_INTERVAL: ${{ inputs.PLESK_POLLING_INTERVAL }}
+    PLESK_PROPAGATION_TIMEOUT: ${{ inputs.PLESK_PROPAGATION_TIMEOUT }}
+    PLESK_SERVER_BASE_URL: ${{ inputs.PLESK_SERVER_BASE_URL }}
+    PLESK_TTL: ${{ inputs.PLESK_TTL }}
+    PLESK_USERNAME: ${{ inputs.PLESK_USERNAME }}
     PORKBUN_API_KEY: ${{ inputs.PORKBUN_API_KEY }}
     PORKBUN_HTTP_TIMEOUT: ${{ inputs.PORKBUN_HTTP_TIMEOUT }}
     PORKBUN_POLLING_INTERVAL: ${{ inputs.PORKBUN_POLLING_INTERVAL }}
@@ -2422,6 +2855,11 @@ runs:
     RIMUHOSTING_POLLING_INTERVAL: ${{ inputs.RIMUHOSTING_POLLING_INTERVAL }}
     RIMUHOSTING_PROPAGATION_TIMEOUT: ${{ inputs.RIMUHOSTING_PROPAGATION_TIMEOUT }}
     RIMUHOSTING_TTL: ${{ inputs.RIMUHOSTING_TTL }}
+    SAFEDNS_AUTH_TOKEN: ${{ inputs.SAFEDNS_AUTH_TOKEN }}
+    SAFEDNS_HTTP_TIMEOUT: ${{ inputs.SAFEDNS_HTTP_TIMEOUT }}
+    SAFEDNS_POLLING_INTERVAL: ${{ inputs.SAFEDNS_POLLING_INTERVAL }}
+    SAFEDNS_PROPAGATION_TIMEOUT: ${{ inputs.SAFEDNS_PROPAGATION_TIMEOUT }}
+    SAFEDNS_TTL: ${{ inputs.SAFEDNS_TTL }}
     SAKURACLOUD_ACCESS_TOKEN: ${{ inputs.SAKURACLOUD_ACCESS_TOKEN }}
     SAKURACLOUD_ACCESS_TOKEN_SECRET: ${{ inputs.SAKURACLOUD_ACCESS_TOKEN_SECRET }}
     SAKURACLOUD_HTTP_TIMEOUT: ${{ inputs.SAKURACLOUD_HTTP_TIMEOUT }}
@@ -2472,15 +2910,40 @@ runs:
     STACKPATH_PROPAGATION_TIMEOUT: ${{ inputs.STACKPATH_PROPAGATION_TIMEOUT }}
     STACKPATH_STACK_ID: ${{ inputs.STACKPATH_STACK_ID }}
     STACKPATH_TTL: ${{ inputs.STACKPATH_TTL }}
+    TENCENTCLOUD_HTTP_TIMEOUT: ${{ inputs.TENCENTCLOUD_HTTP_TIMEOUT }}
+    TENCENTCLOUD_POLLING_INTERVAL: ${{ inputs.TENCENTCLOUD_POLLING_INTERVAL }}
+    TENCENTCLOUD_PROPAGATION_TIMEOUT: ${{ inputs.TENCENTCLOUD_PROPAGATION_TIMEOUT }}
+    TENCENTCLOUD_REGION: ${{ inputs.TENCENTCLOUD_REGION }}
+    TENCENTCLOUD_SECRET_ID: ${{ inputs.TENCENTCLOUD_SECRET_ID }}
+    TENCENTCLOUD_SECRET_KEY: ${{ inputs.TENCENTCLOUD_SECRET_KEY }}
+    TENCENTCLOUD_SESSION_TOKEN: ${{ inputs.TENCENTCLOUD_SESSION_TOKEN }}
+    TENCENTCLOUD_TTL: ${{ inputs.TENCENTCLOUD_TTL }}
     TRANSIP_ACCOUNT_NAME: ${{ inputs.TRANSIP_ACCOUNT_NAME }}
     TRANSIP_POLLING_INTERVAL: ${{ inputs.TRANSIP_POLLING_INTERVAL }}
     TRANSIP_PRIVATE_KEY_PATH: ${{ inputs.TRANSIP_PRIVATE_KEY_PATH }}
     TRANSIP_PROPAGATION_TIMEOUT: ${{ inputs.TRANSIP_PROPAGATION_TIMEOUT }}
     TRANSIP_TTL: ${{ inputs.TRANSIP_TTL }}
+    ULTRADNS_ENDPOINT: ${{ inputs.ULTRADNS_ENDPOINT }}
+    ULTRADNS_PASSWORD: ${{ inputs.ULTRADNS_PASSWORD }}
+    ULTRADNS_POLLING_INTERVAL: ${{ inputs.ULTRADNS_POLLING_INTERVAL }}
+    ULTRADNS_PROPAGATION_TIMEOUT: ${{ inputs.ULTRADNS_PROPAGATION_TIMEOUT }}
+    ULTRADNS_TTL: ${{ inputs.ULTRADNS_TTL }}
+    ULTRADNS_USERNAME: ${{ inputs.ULTRADNS_USERNAME }}
+    VARIOMEDIA_API_TOKEN: ${{ inputs.VARIOMEDIA_API_TOKEN }}
+    VARIOMEDIA_HTTP_TIMEOUT: ${{ inputs.VARIOMEDIA_HTTP_TIMEOUT }}
+    VARIOMEDIA_POLLING_INTERVAL: ${{ inputs.VARIOMEDIA_POLLING_INTERVAL }}
+    VARIOMEDIA_PROPAGATION_TIMEOUT: ${{ inputs.VARIOMEDIA_PROPAGATION_TIMEOUT }}
+    VARIOMEDIA_TTL: ${{ inputs.VARIOMEDIA_TTL }}
     VEGADNS_POLLING_INTERVAL: ${{ inputs.VEGADNS_POLLING_INTERVAL }}
     VEGADNS_PROPAGATION_TIMEOUT: ${{ inputs.VEGADNS_PROPAGATION_TIMEOUT }}
     VEGADNS_TTL: ${{ inputs.VEGADNS_TTL }}
     VEGADNS_URL: ${{ inputs.VEGADNS_URL }}
+    VERCEL_API_TOKEN: ${{ inputs.VERCEL_API_TOKEN }}
+    VERCEL_HTTP_TIMEOUT: ${{ inputs.VERCEL_HTTP_TIMEOUT }}
+    VERCEL_POLLING_INTERVAL: ${{ inputs.VERCEL_POLLING_INTERVAL }}
+    VERCEL_PROPAGATION_TIMEOUT: ${{ inputs.VERCEL_PROPAGATION_TIMEOUT }}
+    VERCEL_TEAM_ID: ${{ inputs.VERCEL_TEAM_ID }}
+    VERCEL_TTL: ${{ inputs.VERCEL_TTL }}
     VERSIO_ENDPOINT: ${{ inputs.VERSIO_ENDPOINT }}
     VERSIO_HTTP_TIMEOUT: ${{ inputs.VERSIO_HTTP_TIMEOUT }}
     VERSIO_PASSWORD: ${{ inputs.VERSIO_PASSWORD }}
@@ -2495,6 +2958,15 @@ runs:
     VINYLDNS_PROPAGATION_TIMEOUT: ${{ inputs.VINYLDNS_PROPAGATION_TIMEOUT }}
     VINYLDNS_SECRET_KEY: ${{ inputs.VINYLDNS_SECRET_KEY }}
     VINYLDNS_TTL: ${{ inputs.VINYLDNS_TTL }}
+    VK_CLOUD_DNS_ENDPOINT="URL: ${{ inputs.VK_CLOUD_DNS_ENDPOINT="URL }}
+    VK_CLOUD_DOMAIN_NAME="Openstack: ${{ inputs.VK_CLOUD_DOMAIN_NAME="Openstack }}
+    VK_CLOUD_IDENTITY_ENDPOINT="URL: ${{ inputs.VK_CLOUD_IDENTITY_ENDPOINT="URL }}
+    VK_CLOUD_PASSWORD: ${{ inputs.VK_CLOUD_PASSWORD }}
+    VK_CLOUD_POLLING_INTERVAL: ${{ inputs.VK_CLOUD_POLLING_INTERVAL }}
+    VK_CLOUD_PROJECT_ID: ${{ inputs.VK_CLOUD_PROJECT_ID }}
+    VK_CLOUD_PROPAGATION_TIMEOUT: ${{ inputs.VK_CLOUD_PROPAGATION_TIMEOUT }}
+    VK_CLOUD_TTL: ${{ inputs.VK_CLOUD_TTL }}
+    VK_CLOUD_USERNAME: ${{ inputs.VK_CLOUD_USERNAME }}
     VSCALE_API_TOKEN: ${{ inputs.VSCALE_API_TOKEN }}
     VSCALE_BASE_URL: ${{ inputs.VSCALE_BASE_URL }}
     VSCALE_HTTP_TIMEOUT: ${{ inputs.VSCALE_HTTP_TIMEOUT }}
@@ -2506,12 +2978,24 @@ runs:
     VULTR_POLLING_INTERVAL: ${{ inputs.VULTR_POLLING_INTERVAL }}
     VULTR_PROPAGATION_TIMEOUT: ${{ inputs.VULTR_PROPAGATION_TIMEOUT }}
     VULTR_TTL: ${{ inputs.VULTR_TTL }}
+    WEBSUPPORT_API_KEY: ${{ inputs.WEBSUPPORT_API_KEY }}
+    WEBSUPPORT_HTTP_TIMEOUT: ${{ inputs.WEBSUPPORT_HTTP_TIMEOUT }}
+    WEBSUPPORT_POLLING_INTERVAL: ${{ inputs.WEBSUPPORT_POLLING_INTERVAL }}
+    WEBSUPPORT_PROPAGATION_TIMEOUT: ${{ inputs.WEBSUPPORT_PROPAGATION_TIMEOUT }}
+    WEBSUPPORT_SECRET: ${{ inputs.WEBSUPPORT_SECRET }}
+    WEBSUPPORT_SEQUENCE_INTERVAL: ${{ inputs.WEBSUPPORT_SEQUENCE_INTERVAL }}
+    WEBSUPPORT_TTL: ${{ inputs.WEBSUPPORT_TTL }}
     WEDOS_HTTP_TIMEOUT: ${{ inputs.WEDOS_HTTP_TIMEOUT }}
     WEDOS_POLLING_INTERVAL: ${{ inputs.WEDOS_POLLING_INTERVAL }}
     WEDOS_PROPAGATION_TIMEOUT: ${{ inputs.WEDOS_PROPAGATION_TIMEOUT }}
     WEDOS_TTL: ${{ inputs.WEDOS_TTL }}
     WEDOS_USERNAME: ${{ inputs.WEDOS_USERNAME }}
     WEDOS_WAPI_PASSWORD: ${{ inputs.WEDOS_WAPI_PASSWORD }}
+    YANDEX_CLOUD_FOLDER_ID: ${{ inputs.YANDEX_CLOUD_FOLDER_ID }}
+    YANDEX_CLOUD_IAM_TOKEN: ${{ inputs.YANDEX_CLOUD_IAM_TOKEN }}
+    YANDEX_CLOUD_POLLING_INTERVAL: ${{ inputs.YANDEX_CLOUD_POLLING_INTERVAL }}
+    YANDEX_CLOUD_PROPAGATION_TIMEOUT: ${{ inputs.YANDEX_CLOUD_PROPAGATION_TIMEOUT }}
+    YANDEX_CLOUD_TTL: ${{ inputs.YANDEX_CLOUD_TTL }}
     YANDEX_HTTP_TIMEOUT: ${{ inputs.YANDEX_HTTP_TIMEOUT }}
     YANDEX_PDD_TOKEN: ${{ inputs.YANDEX_PDD_TOKEN }}
     YANDEX_POLLING_INTERVAL: ${{ inputs.YANDEX_POLLING_INTERVAL }}
