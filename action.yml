@@ -34,2230 +34,2230 @@ inputs:
     
   # DNS Provider settings
   ACME_DNS_API_BASE:
-    description:  "The ACME-DNS API address"
+    description:   "The ACME-DNS API address"
     required: false
   ACME_DNS_STORAGE_PATH:
-    description:  "The ACME-DNS JSON account data file. A per-domain account will be registered/persisted to this file and used for TXT updates."
+    description:   "The ACME-DNS JSON account data file. A per-domain account will be registered/persisted to this file and used for TXT updates."
     required: false
   AKAMAI_ACCESS_TOKEN:
-    description:  "Access token, managed by the Akamai EdgeGrid client"
+    description:   "Access token, managed by the Akamai EdgeGrid client"
     required: false
   AKAMAI_CLIENT_SECRET:
-    description:  "Client secret, managed by the Akamai EdgeGrid client"
+    description:   "Client secret, managed by the Akamai EdgeGrid client"
     required: false
   AKAMAI_CLIENT_TOKEN:
-    description:  "Client token, managed by the Akamai EdgeGrid client"
+    description:   "Client token, managed by the Akamai EdgeGrid client"
     required: false
   AKAMAI_EDGERC:
-    description:  "Path to the .edgerc file, managed by the Akamai EdgeGrid client"
+    description:   "Path to the .edgerc file, managed by the Akamai EdgeGrid client"
     required: false
   AKAMAI_EDGERC_SECTION:
-    description:  "Configuration section, managed by the Akamai EdgeGrid client"
+    description:   "Configuration section, managed by the Akamai EdgeGrid client"
     required: false
   AKAMAI_HOST:
-    description:  "API host, managed by the Akamai EdgeGrid client"
+    description:   "API host, managed by the Akamai EdgeGrid client"
     required: false
   AKAMAI_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check. Default: 15 seconds"
+    description:   "Time between DNS propagation check. Default: 15 seconds"
     required: false
   AKAMAI_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation. Default: 3 minutes"
+    description:   "Maximum waiting time for DNS propagation. Default: 3 minutes"
     required: false
   AKAMAI_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   ALICLOUD_ACCESS_KEY:
-    description:  "Access key ID"
+    description:   "Access key ID"
     required: false
   ALICLOUD_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   ALICLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   ALICLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   ALICLOUD_RAM_ROLE:
-    description:  "Your instance RAM role (https://www.alibabacloud.com/help/doc-detail/54579.htm)"
+    description:   "Your instance RAM role (https://www.alibabacloud.com/help/doc-detail/54579.htm)"
     required: false
   ALICLOUD_SECRET_KEY:
-    description:  "Access Key secret"
+    description:   "Access Key secret"
     required: false
   ALICLOUD_SECURITY_TOKEN:
-    description:  "STS Security Token (optional)"
+    description:   "STS Security Token (optional)"
     required: false
   ALICLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   ALL_INKL_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   ALL_INKL_LOGIN:
-    description:  "KAS login"
+    description:   "KAS login"
     required: false
   ALL_INKL_PASSWORD:
-    description:  "KAS password"
+    description:   "KAS password"
     required: false
   ALL_INKL_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   ALL_INKL_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   API_SVC:
-    description:  "https://joker.com/faq/content/6/496/en/let_s-encrypt-support.html"
+    description:   "https://joker.com/faq/content/6/496/en/let_s-encrypt-support.html"
     required: false
   ARVANCLOUD_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   ARVANCLOUD_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   ARVANCLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   ARVANCLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   ARVANCLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   AURORA_API_KEY:
-    description:  "API key or username to used"
+    description:   "API key or username to used"
     required: false
   AURORA_ENDPOINT:
-    description:  "API endpoint URL"
+    description:   "API endpoint URL"
     required: false
   AURORA_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   AURORA_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   AURORA_SECRET:
-    description:  "Secret password to be used"
+    description:   "Secret password to be used"
     required: false
   AURORA_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   AUTODNS_API_PASSWORD:
-    description:  "User Password"
+    description:   "User Password"
     required: false
   AUTODNS_API_USER:
-    description:  "Username"
+    description:   "Username"
     required: false
   AUTODNS_CONTEXT:
-    description:  "API context (4 for production, 1 for testing. Defaults to 4)"
+    description:   "API context (4 for production, 1 for testing. Defaults to 4)"
     required: false
   AUTODNS_ENDPOINT:
-    description:  "API endpoint URL, defaults to https://api.autodns.com/v1/"
+    description:   "API endpoint URL, defaults to https://api.autodns.com/v1/"
     required: false
   AUTODNS_HTTP_TIMEOUT:
-    description:  "API request timeout, defaults to 30 seconds"
+    description:   "API request timeout, defaults to 30 seconds"
     required: false
   AUTODNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   AUTODNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   AUTODNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   AWS_ACCESS_KEY_ID:
-    description:  "Managed by the AWS client. Access key ID (`AWS_ACCESS_KEY_ID_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
+    description:   "Managed by the AWS client. Access key ID (`AWS_ACCESS_KEY_ID_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
     required: false
   AWS_ASSUME_ROLE_ARN:
-    description:  "Managed by the AWS Role ARN (`AWS_ASSUME_ROLE_ARN` is not supported)"
+    description:   "Managed by the AWS Role ARN (`AWS_ASSUME_ROLE_ARN` is not supported)"
     required: false
   AWS_HOSTED_ZONE_ID:
-    description:  "Override the hosted zone ID."
+    description:   "Override the hosted zone ID."
     required: false
   AWS_MAX_RETRIES:
-    description:  "The number of maximum returns the service will use to make an individual API request"
+    description:   "The number of maximum returns the service will use to make an individual API request"
     required: false
   AWS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   AWS_PROFILE:
-    description:  "Managed by the AWS client (`AWS_PROFILE_FILE` is not supported)"
+    description:   "Managed by the AWS client (`AWS_PROFILE_FILE` is not supported)"
     required: false
   AWS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   AWS_REGION:
-    description:  "Managed by the AWS client (`AWS_REGION_FILE` is not supported)"
+    description:   "Managed by the AWS client (`AWS_REGION_FILE` is not supported)"
     required: false
   AWS_SDK_LOAD_CONFIG:
-    description:  "Managed by the AWS client. Retrieve the region from the CLI config file (`AWS_SDK_LOAD_CONFIG_FILE` is not supported)"
+    description:   "Managed by the AWS client. Retrieve the region from the CLI config file (`AWS_SDK_LOAD_CONFIG_FILE` is not supported)"
     required: false
   AWS_SECRET_ACCESS_KEY:
-    description:  "Managed by the AWS client. Secret access key (`AWS_SECRET_ACCESS_KEY_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
+    description:   "Managed by the AWS client. Secret access key (`AWS_SECRET_ACCESS_KEY_FILE` is not supported, use `AWS_SHARED_CREDENTIALS_FILE` instead)"
     required: false
   AWS_SHARED_CREDENTIALS_FILE:
-    description:  "Managed by the AWS client. Shared credentials file."
+    description:   "Managed by the AWS client. Shared credentials file."
     required: false
   AWS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   AZURE_CLIENT_ID:
-    description:  "Client ID"
+    description:   "Client ID"
     required: false
   AZURE_CLIENT_SECRET:
-    description:  "Client secret"
+    description:   "Client secret"
     required: false
   AZURE_ENVIRONMENT:
-    description:  "Azure environment, one of: public, usgovernment, german, and china"
+    description:   "Azure environment, one of: public, usgovernment, german, and china"
     required: false
   AZURE_METADATA_ENDPOINT:
-    description:  "Metadata Service endpoint URL"
+    description:   "Metadata Service endpoint URL"
     required: false
   AZURE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   AZURE_PRIVATE_ZONE:
-    description:  "Set to true to use Azure Private DNS Zones and not public"
+    description:   "Set to true to use Azure Private DNS Zones and not public"
     required: false
   AZURE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   AZURE_RESOURCE_GROUP:
-    description:  "Resource group"
+    description:   "Resource group"
     required: false
   AZURE_SUBSCRIPTION_ID:
-    description:  "Subscription ID"
+    description:   "Subscription ID"
     required: false
   AZURE_TENANT_ID:
-    description:  "Tenant ID"
+    description:   "Tenant ID"
     required: false
   AZURE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   AZURE_ZONE_NAME:
-    description:  "Zone name to use inside Azure DNS service to add the TXT record in"
+    description:   "Zone name to use inside Azure DNS service to add the TXT record in"
     required: false
   BINDMAN_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   BINDMAN_MANAGER_ADDRESS:
-    description:  "The server URL, should have scheme, hostname, and port (if required) of the Bindman-DNS Manager server"
+    description:   "The server URL, should have scheme, hostname, and port (if required) of the Bindman-DNS Manager server"
     required: false
   BINDMAN_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   BINDMAN_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   BLUECAT_CONFIG_NAME:
-    description:  "Configuration name"
+    description:   "Configuration name"
     required: false
   BLUECAT_DNS_VIEW:
-    description:  "External DNS View Name"
+    description:   "External DNS View Name"
     required: false
   BLUECAT_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   BLUECAT_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   BLUECAT_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   BLUECAT_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   BLUECAT_SERVER_URL:
-    description:  "The server URL, should have scheme, hostname, and port (if required) of the authoritative Bluecat BAM serve"
+    description:   "The server URL, should have scheme, hostname, and port (if required) of the authoritative Bluecat BAM serve"
     required: false
   BLUECAT_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   BLUECAT_USER_NAME:
-    description:  "API username"
+    description:   "API username"
     required: false
   BRANDIT_API_KEY:
-    description:  "The API key"
+    description:   "The API key"
     required: false
   BRANDIT_API_USERNAME:
-    description:  "The API username"
+    description:   "The API username"
     required: false
   BRANDIT_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   BRANDIT_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   BRANDIT_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   BRANDIT_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   BUNNY_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   BUNNY_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   BUNNY_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   BUNNY_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CF_API_EMAIL:
-    description:  "Account email"
+    description:   "Account email"
     required: false
   CF_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   CF_DNS_API_TOKEN:
-    description:  "API token with DNS:Edit permission (since v3.1.0)"
+    description:   "API token with DNS:Edit permission (since v3.1.0)"
     required: false
   CF_ZONE_API_TOKEN:
-    description:  "API token with Zone:Read permission (since v3.1.0)"
+    description:   "API token with Zone:Read permission (since v3.1.0)"
     required: false
   CHECKDOMAIN_ENDPOINT:
-    description:  "API endpoint URL, defaults to https://api.checkdomain.de"
+    description:   "API endpoint URL, defaults to https://api.checkdomain.de"
     required: false
   CHECKDOMAIN_HTTP_TIMEOUT:
-    description:  "API request timeout, defaults to 30 seconds"
+    description:   "API request timeout, defaults to 30 seconds"
     required: false
   CHECKDOMAIN_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CHECKDOMAIN_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CHECKDOMAIN_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   CHECKDOMAIN_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CIVO_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CIVO_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CIVO_TOKEN:
-    description:  "Authentication token"
+    description:   "Authentication token"
     required: false
   CIVO_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CLOUDDNS_CLIENT_ID:
-    description:  "Client ID"
+    description:   "Client ID"
     required: false
   CLOUDDNS_EMAIL:
-    description:  "Account email"
+    description:   "Account email"
     required: false
   CLOUDDNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   CLOUDDNS_PASSWORD:
-    description:  "Account password"
+    description:   "Account password"
     required: false
   CLOUDDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CLOUDDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CLOUDDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CLOUDFLARE_API_KEY:
-    description:  "Alias to CF_API_KEY"
+    description:   "Alias to CF_API_KEY"
     required: false
   CLOUDFLARE_DNS_API_TOKEN:
-    description:  "Alias to CF_DNS_API_TOKEN"
+    description:   "Alias to CF_DNS_API_TOKEN"
     required: false
   CLOUDFLARE_EMAIL:
-    description:  "Alias to CF_API_EMAIL"
+    description:   "Alias to CF_API_EMAIL"
     required: false
   CLOUDFLARE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   CLOUDFLARE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CLOUDFLARE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CLOUDFLARE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CLOUDFLARE_ZONE_API_TOKEN:
-    description:  "Alias to CF_ZONE_API_TOKEN"
+    description:   "Alias to CF_ZONE_API_TOKEN"
     required: false
   CLOUDNS_AUTH_ID:
-    description:  "The API user ID"
+    description:   "The API user ID"
     required: false
   CLOUDNS_AUTH_PASSWORD:
-    description:  "The password for API user ID"
+    description:   "The password for API user ID"
     required: false
   CLOUDNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   CLOUDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CLOUDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CLOUDNS_SUB_AUTH_ID:
-    description:  "The API sub user ID"
+    description:   "The API sub user ID"
     required: false
   CLOUDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CLOUDXNS_API_KEY:
-    description:  "The API key"
+    description:   "The API key"
     required: false
   CLOUDXNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   CLOUDXNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CLOUDXNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CLOUDXNS_SECRET_KEY:
-    description:  "The API secret key"
+    description:   "The API secret key"
     required: false
   CLOUDXNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CONOHA_API_PASSWORD:
-    description:  "The API password"
+    description:   "The API password"
     required: false
   CONOHA_API_USERNAME:
-    description:  "The API username"
+    description:   "The API username"
     required: false
   CONOHA_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   CONOHA_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CONOHA_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CONOHA_REGION:
-    description:  "The region"
+    description:   "The region"
     required: false
   CONOHA_TENANT_ID:
-    description:  "Tenant ID"
+    description:   "Tenant ID"
     required: false
   CONOHA_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   CONSTELLIX_API_KEY:
-    description:  "User API key"
+    description:   "User API key"
     required: false
   CONSTELLIX_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   CONSTELLIX_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   CONSTELLIX_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   CONSTELLIX_SECRET_KEY:
-    description:  "User secret key"
+    description:   "User secret key"
     required: false
   CONSTELLIX_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DERAK_API_KEY:
-    description:  "The API key"
+    description:   "The API key"
     required: false
   DERAK_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   DERAK_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DERAK_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DERAK_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DERAK_WEBSITE_ID:
-    description:  "Force the zone/website ID"
+    description:   "Force the zone/website ID"
     required: false
   DESEC_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   DESEC_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DESEC_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DESEC_TOKEN:
-    description:  "Domain token"
+    description:   "Domain token"
     required: false
   DESEC_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DESIGNATE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DESIGNATE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DESIGNATE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
-    required: false
-  DNSHOMEDE_CREDENTIALS:
-    description:  "Comma-separated list of domain:password credential pairs"
-    required: false
-  DNSHOMEDE_HTTP_TIMEOUT:
-    description:  "API request timeout"
-    required: false
-  DNSHOMEDE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation checks"
-    required: false
-  DNSHOMEDE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation; defaults to 300s (5 minutes)"
-    required: false
-  DNSHOMEDE_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
-    required: false
-  DNSIMPLE_BASE_URL:
-    description:  "API endpoint URL"
-    required: false
-  DNSIMPLE_OAUTH_TOKEN:
-    description:  "OAuth token"
-    required: false
-  DNSIMPLE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
-    required: false
-  DNSIMPLE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
-    required: false
-  DNSIMPLE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
-    required: false
-  DNSMADEEASY_API_KEY:
-    description:  "The API key"
-    required: false
-  DNSMADEEASY_API_SECRET:
-    description:  "The API Secret key"
-    required: false
-  DNSMADEEASY_HTTP_TIMEOUT:
-    description:  "API request timeout"
-    required: false
-  DNSMADEEASY_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
-    required: false
-  DNSMADEEASY_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
-    required: false
-  DNSMADEEASY_SANDBOX:
-    description:  "Activate the sandbox (boolean)"
-    required: false
-  DNSMADEEASY_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
-    required: false
-  DNSPOD_API_KEY:
-    description:  "The user token"
-    required: false
-  DNSPOD_HTTP_TIMEOUT:
-    description:  "API request timeout"
-    required: false
-  DNSPOD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
-    required: false
-  DNSPOD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
-    required: false
-  DNSPOD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DNS_ZONE:
-    description:  "Domain name of the DNS zone"
+    description:   "Domain name of the DNS zone"
     required: false
-  DODE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+  DNSHOMEDE_CREDENTIALS:
+    description:   "Comma-separated list of domain:password credential pairs"
     required: false
-  DODE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+  DNSHOMEDE_HTTP_TIMEOUT:
+    description:   "API request timeout"
     required: false
-  DODE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+  DNSHOMEDE_POLLING_INTERVAL:
+    description:   "Time between DNS propagation checks"
     required: false
-  DODE_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+  DNSHOMEDE_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation; defaults to 300s (5 minutes)"
     required: false
-  DODE_TOKEN:
-    description:  "API token"
+  DNSHOMEDE_SEQUENCE_INTERVAL:
+    description:   "Time between sequential requests"
     required: false
-  DODE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+  DNSIMPLE_BASE_URL:
+    description:   "API endpoint URL"
     required: false
-  DOMENESHOP_API_SECRET:
-    description:  "API secret"
+  DNSIMPLE_OAUTH_TOKEN:
+    description:   "OAuth token"
     required: false
-  DOMENESHOP_API_TOKEN:
-    description:  "API token"
+  DNSIMPLE_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
     required: false
-  DOMENESHOP_HTTP_TIMEOUT:
-    description:  "API request timeout"
+  DNSIMPLE_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
     required: false
-  DOMENESHOP_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+  DNSIMPLE_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
-  DOMENESHOP_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+  DNSMADEEASY_API_KEY:
+    description:   "The API key"
+    required: false
+  DNSMADEEASY_API_SECRET:
+    description:   "The API Secret key"
+    required: false
+  DNSMADEEASY_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DNSMADEEASY_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DNSMADEEASY_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  DNSMADEEASY_SANDBOX:
+    description:   "Activate the sandbox (boolean)"
+    required: false
+  DNSMADEEASY_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  DNSPOD_API_KEY:
+    description:   "The user token"
+    required: false
+  DNSPOD_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DNSPOD_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DNSPOD_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  DNSPOD_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DO_API_URL:
-    description:  "The URL of the API"
+    description:   "The URL of the API"
     required: false
   DO_AUTH_TOKEN:
-    description:  "Authentication token"
+    description:   "Authentication token"
     required: false
   DO_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   DO_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DO_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DO_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  DODE_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DODE_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DODE_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  DODE_SEQUENCE_INTERVAL:
+    description:   "Time between sequential requests"
+    required: false
+  DODE_TOKEN:
+    description:   "API token"
+    required: false
+  DODE_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  DOMENESHOP_API_SECRET:
+    description:   "API secret"
+    required: false
+  DOMENESHOP_API_TOKEN:
+    description:   "API token"
+    required: false
+  DOMENESHOP_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DOMENESHOP_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DOMENESHOP_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DREAMHOST_API_KEY:
-    description:  "The API key"
+    description:   "The API key"
     required: false
   DREAMHOST_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   DREAMHOST_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DREAMHOST_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DREAMHOST_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DUCKDNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   DUCKDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DUCKDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DUCKDNS_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   DUCKDNS_TOKEN:
-    description:  "Account token"
+    description:   "Account token"
     required: false
   DUCKDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
-    required: false
-  DYNU_API_KEY:
-    description:  "API key"
-    required: false
-  DYNU_HTTP_TIMEOUT:
-    description:  "API request timeout"
-    required: false
-  DYNU_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
-    required: false
-  DYNU_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
-    required: false
-  DYNU_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DYN_CUSTOMER_NAME:
-    description:  "Customer name"
+    description:   "Customer name"
     required: false
   DYN_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   DYN_PASSWORD:
-    description:  "Password"
+    description:   "Password"
     required: false
   DYN_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   DYN_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   DYN_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   DYN_USER_NAME:
-    description:  "User name"
+    description:   "User name"
+    required: false
+  DYNU_API_KEY:
+    description:   "API key"
+    required: false
+  DYNU_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DYNU_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DYNU_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  DYNU_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   EASYDNS_ENDPOINT:
-    description:  "The endpoint URL of the API Server"
+    description:   "The endpoint URL of the API Server"
     required: false
   EASYDNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   EASYDNS_KEY:
-    description:  "API Key"
+    description:   "API Key"
     required: false
   EASYDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   EASYDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   EASYDNS_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   EASYDNS_TOKEN:
-    description:  "API Token"
+    description:   "API Token"
     required: false
   EASYDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   EPIK_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   EPIK_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   EPIK_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   EPIK_SIGNATURE:
-    description:  "Epik API signature (https://registrar.epik.com/account/api-settings/)"
+    description:   "Epik API signature (https://registrar.epik.com/account/api-settings/)"
     required: false
   EPIK_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   EXOSCALE_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   EXOSCALE_API_SECRET:
-    description:  "API secret"
+    description:   "API secret"
     required: false
   EXOSCALE_API_ZONE:
-    description:  "API zone"
+    description:   "API zone"
     required: false
   EXOSCALE_ENDPOINT:
-    description:  "API endpoint URL"
+    description:   "API endpoint URL"
     required: false
   EXOSCALE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   EXOSCALE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   EXOSCALE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   EXOSCALE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   FREEMYIP_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   FREEMYIP_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   FREEMYIP_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   FREEMYIP_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   FREEMYIP_TOKEN:
-    description:  "Account token"
+    description:   "Account token"
     required: false
   FREEMYIP_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
-    required: false
-  GANDIV5_API_KEY:
-    description:  "API key"
-    required: false
-  GANDIV5_HTTP_TIMEOUT:
-    description:  "API request timeout"
-    required: false
-  GANDIV5_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
-    required: false
-  GANDIV5_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
-    required: false
-  GANDIV5_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GANDI_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   GANDI_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   GANDI_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   GANDI_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   GANDI_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  GANDIV5_API_KEY:
+    description:   "API key"
+    required: false
+  GANDIV5_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  GANDIV5_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  GANDIV5_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  GANDIV5_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GCE_ALLOW_PRIVATE_ZONE:
-    description:  "Allows requested domain to be in private DNS zone, works only with a private ACME server (by default: false)"
+    description:   "Allows requested domain to be in private DNS zone, works only with a private ACME server (by default: false)"
     required: false
   GCE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   GCE_PROJECT:
-    description:  "Project name (by default, the project name is auto-detected by using the metadata service)"
+    description:   "Project name (by default, the project name is auto-detected by using the metadata service)"
     required: false
   GCE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   GCE_SERVICE_ACCOUNT:
-    description:  "Account"
+    description:   "Account"
     required: false
   GCE_SERVICE_ACCOUNT_FILE:
-    description:  "Account file path"
+    description:   "Account file path"
     required: false
   GCE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GCORE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   GCORE_PERMANENT_API_TOKEN:
-    description:  "Permanent API tokene (https://gcorelabs.com/blog/permanent-api-token-explained/)"
+    description:   "Permanent API tokene (https://gcorelabs.com/blog/permanent-api-token-explained/)"
     required: false
   GCORE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   GCORE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   GCORE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GLESYS_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   GLESYS_API_USER:
-    description:  "API user"
+    description:   "API user"
     required: false
   GLESYS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   GLESYS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   GLESYS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   GLESYS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GODADDY_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   GODADDY_API_SECRET:
-    description:  "API secret"
+    description:   "API secret"
     required: false
   GODADDY_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   GODADDY_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   GODADDY_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   GODADDY_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GOOGLE_DOMAINS_ACCESS_TOKEN:
-    description:  "Access token"
+    description:   "Access token"
     required: false
   GOOGLE_DOMAINS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   GOOGLE_DOMAINS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   GOOGLE_DOMAINS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   HETZNER_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   HETZNER_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   HETZNER_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   HETZNER_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   HETZNER_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   HOSTINGDE_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   HOSTINGDE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   HOSTINGDE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   HOSTINGDE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   HOSTINGDE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   HOSTINGDE_ZONE_NAME:
-    description:  "Zone name in ACE format"
+    description:   "Zone name in ACE format"
     required: false
   HOSTTECH_API_KEY:
-    description:  "API login"
+    description:   "API login"
     required: false
   HOSTTECH_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   HOSTTECH_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   HOSTTECH_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   HOSTTECH_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   HOSTTECH_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   HTTPREQ_ENDPOINT:
-    description:  "The URL of the server"
+    description:   "The URL of the server"
     required: false
   HTTPREQ_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   HTTPREQ_MODE:
-    description:  "`RAW`, none"
+    description:   "`RAW`, none"
     required: false
   HTTPREQ_PASSWORD:
-    description:  "Basic authentication password"
+    description:   "Basic authentication password"
     required: false
   HTTPREQ_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   HTTPREQ_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   HTTPREQ_USERNAME:
-    description:  "Basic authentication username"
+    description:   "Basic authentication username"
     required: false
   HURRICANE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   HURRICANE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation checks"
+    description:   "Time between DNS propagation checks"
     required: false
   HURRICANE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation; defaults to 300s (5 minutes)"
+    description:   "Maximum waiting time for DNS propagation; defaults to 300s (5 minutes)"
     required: false
   HURRICANE_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   HURRICANE_TOKENS:
-    description:  "TXT record names and tokens"
+    description:   "TXT record names and tokens"
     required: false
   HYPERONE_API_URL:
-    description:  "Allows to pass custom API Endpoint to be used in the challenge (default https://api.hyperone.com/v2)"
+    description:   "Allows to pass custom API Endpoint to be used in the challenge (default https://api.hyperone.com/v2)"
     required: false
   HYPERONE_LOCATION_ID:
-    description:  "Specifies location (region) to be used in API calls. (default pl-waw-1)"
+    description:   "Specifies location (region) to be used in API calls. (default pl-waw-1)"
     required: false
   HYPERONE_PASSPORT_LOCATION:
-    description:  "Allows to pass custom passport file location (default ~/.h1/passport.json)"
+    description:   "Allows to pass custom passport file location (default ~/.h1/passport.json)"
     required: false
   HYPERONE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   HYPERONE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   HYPERONE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   IIJ_API_ACCESS_KEY:
-    description:  "API access key"
+    description:   "API access key"
     required: false
   IIJ_API_SECRET_KEY:
-    description:  "API secret key"
+    description:   "API secret key"
     required: false
   IIJ_DO_SERVICE_CODE:
-    description:  "DO service code"
+    description:   "DO service code"
     required: false
   IIJ_DPF_API_ENDPOINT:
-    description:  "API endpoint URL, defaults to https://api.dns-platform.jp/dpf/v1"
+    description:   "API endpoint URL, defaults to https://api.dns-platform.jp/dpf/v1"
     required: false
   IIJ_DPF_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   IIJ_DPF_DPM_SERVICE_CODE:
-    description:  "IIJ Managed DNS Service's service code"
+    description:   "IIJ Managed DNS Service's service code"
     required: false
   IIJ_DPF_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check, defaults to 5 second"
+    description:   "Time between DNS propagation check, defaults to 5 second"
     required: false
   IIJ_DPF_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation, defaults to 660 second"
+    description:   "Maximum waiting time for DNS propagation, defaults to 660 second"
     required: false
   IIJ_DPF_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge, default to 300"
+    description:   "The TTL of the TXT record used for the DNS challenge, default to 300"
     required: false
   IIJ_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   IIJ_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   IIJ_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   INFOBLOX_DNS_VIEW:
-    description:  "The view for the TXT records, default: External"
+    description:   "The view for the TXT records, default: External"
     required: false
   INFOBLOX_HOST:
-    description:  "Host URI"
+    description:   "Host URI"
     required: false
   INFOBLOX_HTTP_TIMEOUT:
-    description:  "HTTP request timeout"
+    description:   "HTTP request timeout"
     required: false
   INFOBLOX_PASSWORD:
-    description:  "Account Password"
+    description:   "Account Password"
     required: false
   INFOBLOX_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   INFOBLOX_PORT:
-    description:  "The port for the infoblox grid manager, default: 443"
+    description:   "The port for the infoblox grid manager, default: 443"
     required: false
   INFOBLOX_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   INFOBLOX_SSL_VERIFY:
-    description:  "Whether or not to verify the TLS certificate, default: true"
+    description:   "Whether or not to verify the TLS certificate, default: true"
     required: false
   INFOBLOX_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   INFOBLOX_USERNAME:
-    description:  "Account Username"
+    description:   "Account Username"
     required: false
   INFOBLOX_WAPI_VERSION:
-    description:  "The version of WAPI being used, default: 2.11"
+    description:   "The version of WAPI being used, default: 2.11"
     required: false
   INFOMANIAK_ACCESS_TOKEN:
-    description:  "Access token"
+    description:   "Access token"
     required: false
   INFOMANIAK_ENDPOINT:
-    description:  "https://api.infomaniak.com"
+    description:   "https://api.infomaniak.com"
     required: false
   INFOMANIAK_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   INFOMANIAK_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   INFOMANIAK_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   INFOMANIAK_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge in seconds"
+    description:   "The TTL of the TXT record used for the DNS challenge in seconds"
     required: false
   INTERNET_BS_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   INTERNET_BS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   INTERNET_BS_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   INTERNET_BS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   INTERNET_BS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   INTERNET_BS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   INWX_PASSWORD:
-    description:  "Password"
+    description:   "Password"
     required: false
   INWX_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   INWX_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation (default 360s)"
+    description:   "Maximum waiting time for DNS propagation (default 360s)"
     required: false
   INWX_SANDBOX:
-    description:  "Activate the sandbox (boolean)"
+    description:   "Activate the sandbox (boolean)"
     required: false
   INWX_SHARED_SECRET:
-    description:  "shared secret related to 2FA"
+    description:   "shared secret related to 2FA"
     required: false
   INWX_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   INWX_USERNAME:
-    description:  "Username"
+    description:   "Username"
     required: false
   IONOS_API_KEY:
-    description:  "API key `<prefix>.<secret>` https://developer.hosting.ionos.com/docs/getstarted"
+    description:   "API key `<prefix>.<secret>` https://developer.hosting.ionos.com/docs/getstarted"
     required: false
   IONOS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   IONOS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   IONOS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   IONOS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   IWANTMYNAME_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   IWANTMYNAME_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   IWANTMYNAME_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   IWANTMYNAME_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   IWANTMYNAME_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   IWANTMYNAME_USERNAME:
-    description:  "API username"
+    description:   "API username"
     required: false
   JOKER_API_KEY:
-    description:  "API key (only with DMAPI mode)"
+    description:   "API key (only with DMAPI mode)"
     required: false
   JOKER_API_MODE:
-    description:  "'DMAPI' or 'SVC'. DMAPI is for resellers accounts. (Default: DMAPI)"
+    description:   "'DMAPI' or 'SVC'. DMAPI is for resellers accounts. (Default: DMAPI)"
     required: false
   JOKER_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   JOKER_PASSWORD:
-    description:  "Joker.com password"
+    description:   "Joker.com password"
     required: false
   JOKER_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   JOKER_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   JOKER_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests (only with 'SVC' mode)"
+    description:   "Time between sequential requests (only with 'SVC' mode)"
     required: false
   JOKER_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   JOKER_USERNAME:
-    description:  "Joker.com username"
+    description:   "Joker.com username"
     required: false
   LIARA_API_KEY:
-    description:  "The API key"
+    description:   "The API key"
     required: false
   LIARA_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   LIARA_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   LIARA_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   LIARA_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   LIGHTSAIL_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   LIGHTSAIL_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   LINODE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   LINODE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   LINODE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   LINODE_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   LINODE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   LIQUID_WEB_HTTP_TIMEOUT:
-    description:  "Maximum waiting time for the DNS records to be created (not verified)"
+    description:   "Maximum waiting time for the DNS records to be created (not verified)"
     required: false
   LIQUID_WEB_PASSWORD:
-    description:  "Storm API Password"
+    description:   "Storm API Password"
     required: false
   LIQUID_WEB_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   LIQUID_WEB_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   LIQUID_WEB_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   LIQUID_WEB_URL:
-    description:  "Storm API endpoint"
+    description:   "Storm API endpoint"
     required: false
   LIQUID_WEB_USERNAME:
-    description:  "Storm API Username"
+    description:   "Storm API Username"
     required: false
   LIQUID_WEB_ZONE:
-    description:  "DNS Zone"
+    description:   "DNS Zone"
     required: false
   LOOPIA_API_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   LOOPIA_API_URL:
-    description:  "API endpoint. Ex: https://api.loopia.se/RPCSERV or https://api.loopia.rs/RPCSERV"
+    description:   "API endpoint. Ex: https://api.loopia.se/RPCSERV or https://api.loopia.rs/RPCSERV"
     required: false
   LOOPIA_API_USER:
-    description:  "API username"
+    description:   "API username"
     required: false
   LOOPIA_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   LOOPIA_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   LOOPIA_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   LOOPIA_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   LUADNS_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   LUADNS_API_USERNAME:
-    description:  "Username (your email)"
+    description:   "Username (your email)"
     required: false
   LUADNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   LUADNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   LUADNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   LUADNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   MYDNSJP_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   MYDNSJP_MASTER_ID:
-    description:  "Master ID"
+    description:   "Master ID"
     required: false
   MYDNSJP_PASSWORD:
-    description:  "Password"
+    description:   "Password"
     required: false
   MYDNSJP_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   MYDNSJP_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   MYDNSJP_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   MYTHICBEASTS_API_ENDPOINT:
-    description:  "The endpoint for the API (must implement v2)"
+    description:   "The endpoint for the API (must implement v2)"
     required: false
   MYTHICBEASTS_AUTH_API_ENDPOINT:
-    description:  "The endpoint for Mythic Beasts' Authentication"
+    description:   "The endpoint for Mythic Beasts' Authentication"
     required: false
   MYTHICBEASTS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   MYTHICBEASTS_PASSWORD:
-    description:  "Password"
+    description:   "Password"
     required: false
   MYTHICBEASTS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   MYTHICBEASTS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   MYTHICBEASTS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   MYTHICBEASTS_USERNAME:
-    description:  "User name"
+    description:   "User name"
     required: false
   NAMECHEAP_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   NAMECHEAP_API_USER:
-    description:  "API user"
+    description:   "API user"
     required: false
   NAMECHEAP_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NAMECHEAP_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NAMECHEAP_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NAMECHEAP_SANDBOX:
-    description:  "Activate the sandbox (boolean)"
+    description:   "Activate the sandbox (boolean)"
     required: false
   NAMECHEAP_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NAMECOM_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   NAMECOM_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NAMECOM_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NAMECOM_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NAMECOM_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NAMECOM_USERNAME:
-    description:  "Username"
+    description:   "Username"
     required: false
   NAMESILO_API_KEY:
-    description:  "Client ID"
+    description:   "Client ID"
     required: false
   NAMESILO_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NAMESILO_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation, it is better to set larger than 15m"
+    description:   "Maximum waiting time for DNS propagation, it is better to set larger than 15m"
     required: false
   NAMESILO_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge, should be in [3600, 2592000]"
+    description:   "The TTL of the TXT record used for the DNS challenge, should be in [3600, 2592000]"
     required: false
   NEARLYFREESPEECH_API_KEY:
-    description:  "API Key for API requests"
+    description:   "API Key for API requests"
     required: false
   NEARLYFREESPEECH_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NEARLYFREESPEECH_LOGIN:
-    description:  "Username for API requests"
+    description:   "Username for API requests"
     required: false
   NEARLYFREESPEECH_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NEARLYFREESPEECH_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NEARLYFREESPEECH_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   NEARLYFREESPEECH_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NETCUP_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   NETCUP_API_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   NETCUP_CUSTOMER_NUMBER:
-    description:  "Customer number"
+    description:   "Customer number"
     required: false
   NETCUP_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NETCUP_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NETCUP_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NETCUP_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NETLIFY_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NETLIFY_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NETLIFY_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NETLIFY_TOKEN:
-    description:  "Token"
+    description:   "Token"
     required: false
   NETLIFY_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NICMANAGER_API_EMAIL:
-    description:  "Email-based login"
+    description:   "Email-based login"
     required: false
   NICMANAGER_API_LOGIN:
-    description:  "Login, used for Username-based login"
+    description:   "Login, used for Username-based login"
     required: false
   NICMANAGER_API_MODE:
-    description:  "mode: 'anycast' or 'zone' (default: 'anycast')"
+    description:   "mode: 'anycast' or 'zone' (default: 'anycast')"
     required: false
   NICMANAGER_API_OTP:
-    description:  "TOTP Secret (optional)"
+    description:   "TOTP Secret (optional)"
     required: false
   NICMANAGER_API_PASSWORD:
-    description:  "Password, always required"
+    description:   "Password, always required"
     required: false
   NICMANAGER_API_USERNAME:
-    description:  "Username, used for Username-based login"
+    description:   "Username, used for Username-based login"
     required: false
   NICMANAGER_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NICMANAGER_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NICMANAGER_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NICMANAGER_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NIFCLOUD_ACCESS_KEY_ID:
-    description:  "Access key"
+    description:   "Access key"
     required: false
   NIFCLOUD_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NIFCLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NIFCLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NIFCLOUD_SECRET_ACCESS_KEY:
-    description:  "Secret access key"
+    description:   "Secret access key"
     required: false
   NIFCLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NJALLA_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NJALLA_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NJALLA_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NJALLA_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   NJALLA_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NODION_API_TOKEN:
-    description:  "The API token"
+    description:   "The API token"
     required: false
   NODION_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NODION_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NODION_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NODION_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   NS1_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   NS1_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   NS1_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   NS1_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   NS1_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   OCI_COMPARTMENT_OCID:
-    description:  "Compartment OCID"
+    description:   "Compartment OCID"
     required: false
   OCI_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   OCI_PRIVKEY_FILE:
-    description:  "Private key file"
+    description:   "Private key file"
     required: false
   OCI_PRIVKEY_PASS:
-    description:  "Private key password"
+    description:   "Private key password"
     required: false
   OCI_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   OCI_PUBKEY_FINGERPRINT:
-    description:  "Public key fingerprint"
+    description:   "Public key fingerprint"
     required: false
   OCI_REGION:
-    description:  "Region"
+    description:   "Region"
     required: false
   OCI_TENANCY_OCID:
-    description:  "Tenancy OCID"
+    description:   "Tenancy OCID"
     required: false
   OCI_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   OCI_USER_OCID:
-    description:  "User OCID"
+    description:   "User OCID"
     required: false
   OS_APPLICATION_CREDENTIAL_ID:
-    description:  "Application credential ID"
+    description:   "Application credential ID"
     required: false
   OS_APPLICATION_CREDENTIAL_NAME:
-    description:  "Application credential name"
+    description:   "Application credential name"
     required: false
   OS_APPLICATION_CREDENTIAL_SECRET:
-    description:  "Application credential secret"
+    description:   "Application credential secret"
     required: false
   OS_AUTH_URL:
-    description:  "Identity endpoint URL"
+    description:   "Identity endpoint URL"
     required: false
   OS_PASSWORD:
-    description:  "Password"
+    description:   "Password"
     required: false
   OS_PROJECT_ID:
-    description:  "Project ID"
+    description:   "Project ID"
     required: false
   OS_PROJECT_NAME:
-    description:  "Project name"
+    description:   "Project name"
     required: false
   OS_REGION_NAME:
-    description:  "Region name"
+    description:   "Region name"
     required: false
   OS_TENANT_NAME:
-    description:  "Tenant name (deprecated see OS_PROJECT_NAME and OS_PROJECT_ID)"
-    required: false
-  OS_USERNAME:
-    description:  "Username"
+    description:   "Tenant name (deprecated see OS_PROJECT_NAME and OS_PROJECT_ID)"
     required: false
   OS_USER_ID:
-    description:  "User ID"
+    description:   "User ID"
+    required: false
+  OS_USERNAME:
+    description:   "Username"
     required: false
   OTC_DOMAIN_NAME:
-    description:  "Domain name"
+    description:   "Domain name"
     required: false
   OTC_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   OTC_IDENTITY_ENDPOINT:
-    description:  "Identity endpoint URL"
+    description:   "Identity endpoint URL"
     required: false
   OTC_PASSWORD:
-    description:  "Password"
+    description:   "Password"
     required: false
   OTC_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   OTC_PROJECT_NAME:
-    description:  "Project name"
+    description:   "Project name"
     required: false
   OTC_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   OTC_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   OTC_USER_NAME:
-    description:  "User name"
+    description:   "User name"
     required: false
   OVH_APPLICATION_KEY:
-    description:  "Application key"
+    description:   "Application key"
     required: false
   OVH_APPLICATION_SECRET:
-    description:  "Application secret"
+    description:   "Application secret"
     required: false
   OVH_CONSUMER_KEY:
-    description:  "Consumer key"
+    description:   "Consumer key"
     required: false
   OVH_ENDPOINT:
-    description:  "Endpoint URL (ovh-eu or ovh-ca)"
+    description:   "Endpoint URL (ovh-eu or ovh-ca)"
     required: false
   OVH_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   OVH_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   OVH_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   OVH_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   PDNS_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   PDNS_API_URL:
-    description:  "API URL"
+    description:   "API URL"
     required: false
   PDNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   PDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   PDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   PDNS_SERVER_NAME:
-    description:  "Name of the server in the URL, 'localhost' by default"
+    description:   "Name of the server in the URL, 'localhost' by default"
     required: false
   PDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   PLESK_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   PLESK_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   PLESK_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   PLESK_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   PLESK_SERVER_BASE_URL:
-    description:  "Base URL of the server (ex: https://plesk.myserver.com:8443)"
+    description:   "Base URL of the server (ex: https://plesk.myserver.com:8443)"
     required: false
   PLESK_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   PLESK_USERNAME:
-    description:  "API username"
+    description:   "API username"
     required: false
   PORKBUN_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   PORKBUN_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   PORKBUN_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   PORKBUN_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   PORKBUN_SECRET_API_KEY:
-    description:  "secret API key"
+    description:   "secret API key"
     required: false
   PORKBUN_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   RACKSPACE_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   RACKSPACE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   RACKSPACE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   RACKSPACE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   RACKSPACE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   RACKSPACE_USER:
-    description:  "API user"
+    description:   "API user"
     required: false
   REGRU_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   REGRU_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   REGRU_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   REGRU_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   REGRU_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   REGRU_USERNAME:
-    description:  "API username"
+    description:   "API username"
     required: false
   RFC2136_DNS_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   RFC2136_NAMESERVER:
-    description:  'Network address in the form "host" or "host:port"'
+    description:   'Network address in the form "host" or "host:port"'
     required: false
   RFC2136_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   RFC2136_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   RFC2136_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   RFC2136_TSIG_ALGORITHM:
-    description:  "TSIG algorithm. See [miekg/dns#tsig.go](https://github.com/miekg/dns/blob/master/tsig.go) for supported values. To disable TSIG authentication, leave the `RFC2136_TSIG*` variables unset."
+    description:   "TSIG algorithm. See [miekg/dns#tsig.go](https://github.com/miekg/dns/blob/master/tsig.go) for supported values. To disable TSIG authentication, leave the `RFC2136_TSIG*` variables unset."
     required: false
   RFC2136_TSIG_KEY:
-    description:  "Name of the secret key as defined in DNS server configuration. To disable TSIG authentication, leave the `RFC2136_TSIG*` variables unset."
+    description:   "Name of the secret key as defined in DNS server configuration. To disable TSIG authentication, leave the `RFC2136_TSIG*` variables unset."
     required: false
   RFC2136_TSIG_SECRET:
-    description:  "Secret key payload. To disable TSIG authentication, leave the` RFC2136_TSIG*` variables unset."
+    description:   "Secret key payload. To disable TSIG authentication, leave the` RFC2136_TSIG*` variables unset."
     required: false
   RFC2136_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   RIMUHOSTING_API_KEY:
-    description:  "User API key"
+    description:   "User API key"
     required: false
   RIMUHOSTING_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   RIMUHOSTING_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   RIMUHOSTING_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   RIMUHOSTING_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SAFEDNS_AUTH_TOKEN:
-    description:  "Authentication token"
+    description:   "Authentication token"
     required: false
   SAFEDNS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SAFEDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SAFEDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SAFEDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SAKURACLOUD_ACCESS_TOKEN:
-    description:  "Access token"
+    description:   "Access token"
     required: false
   SAKURACLOUD_ACCESS_TOKEN_SECRET:
-    description:  "Access token secret"
+    description:   "Access token secret"
     required: false
   SAKURACLOUD_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SAKURACLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SAKURACLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SAKURACLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SCALEWAY_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   SCALEWAY_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SCALEWAY_PROJECT_ID:
-    description:  "Project to use (optional)"
+    description:   "Project to use (optional)"
     required: false
   SCALEWAY_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SCALEWAY_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SECRET_VEGADNS_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   SECRET_VEGADNS_SECRET:
-    description:  "API secret"
+    description:   "API secret"
     required: false
   SELECTEL_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   SELECTEL_BASE_URL:
-    description:  "API endpoint URL"
+    description:   "API endpoint URL"
     required: false
   SELECTEL_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SELECTEL_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SELECTEL_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SELECTEL_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SERVERCOW_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SERVERCOW_PASSWORD:
-    description:  "API password"
+    description:   "API password"
     required: false
   SERVERCOW_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SERVERCOW_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SERVERCOW_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SERVERCOW_USERNAME:
-    description:  "API username"
+    description:   "API username"
     required: false
   SIMPLY_ACCOUNT_NAME:
-    description:  "Account name"
+    description:   "Account name"
     required: false
   SIMPLY_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   SIMPLY_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SIMPLY_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SIMPLY_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SIMPLY_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SOFTLAYER_API_KEY:
-    description:  "Classic Infrastructure API key"
+    description:   "Classic Infrastructure API key"
     required: false
   SOFTLAYER_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SOFTLAYER_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SOFTLAYER_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SOFTLAYER_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SOFTLAYER_USERNAME:
-    description:  "User name (IBM Cloud is <accountID>_<emailAddress>)"
+    description:   "User name (IBM Cloud is <accountID>_<emailAddress>)"
     required: false
   SONIC_API_KEY:
-    description:  "API Key"
+    description:   "API Key"
     required: false
   SONIC_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   SONIC_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   SONIC_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   SONIC_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   SONIC_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   SONIC_USER_ID:
-    description:  "User ID"
+    description:   "User ID"
     required: false
   STACKPATH_CLIENT_ID:
-    description:  "Client ID"
+    description:   "Client ID"
     required: false
   STACKPATH_CLIENT_SECRET:
-    description:  "Client secret"
+    description:   "Client secret"
     required: false
   STACKPATH_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   STACKPATH_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   STACKPATH_STACK_ID:
-    description:  "Stack ID"
+    description:   "Stack ID"
     required: false
   STACKPATH_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   TENCENTCLOUD_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   TENCENTCLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   TENCENTCLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   TENCENTCLOUD_REGION:
-    description:  "Region"
+    description:   "Region"
     required: false
   TENCENTCLOUD_SECRET_ID:
-    description:  "Access key ID"
+    description:   "Access key ID"
     required: false
   TENCENTCLOUD_SECRET_KEY:
-    description:  "Access Key secret"
+    description:   "Access Key secret"
     required: false
   TENCENTCLOUD_SESSION_TOKEN:
-    description:  "Access Key token"
+    description:   "Access Key token"
     required: false
   TENCENTCLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   TRANSIP_ACCOUNT_NAME:
-    description:  "Account name"
+    description:   "Account name"
     required: false
   TRANSIP_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   TRANSIP_PRIVATE_KEY_PATH:
-    description:  "Private key path"
+    description:   "Private key path"
     required: false
   TRANSIP_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   TRANSIP_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   ULTRADNS_ENDPOINT:
-    description:  "API endpoint URL, defaults to https://api.ultradns.com/"
+    description:   "API endpoint URL, defaults to https://api.ultradns.com/"
     required: false
   ULTRADNS_PASSWORD:
-    description:  "API Password"
+    description:   "API Password"
     required: false
   ULTRADNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   ULTRADNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   ULTRADNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   ULTRADNS_USERNAME:
-    description:  "API Username"
+    description:   "API Username"
     required: false
   VARIOMEDIA_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   VARIOMEDIA_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   VARIOMEDIA_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VARIOMEDIA_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VARIOMEDIA_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   VEGADNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VEGADNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VEGADNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   VEGADNS_URL:
-    description:  "API endpoint URL"
+    description:   "API endpoint URL"
     required: false
   VERCEL_API_TOKEN:
-    description:  "Authentication token"
+    description:   "Authentication token"
     required: false
   VERCEL_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   VERCEL_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VERCEL_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VERCEL_TEAM_ID:
-    description:  "Team ID (ex: team_xxxxxxxxxxxxxxxxxxxxxxxx)"
+    description:   "Team ID (ex: team_xxxxxxxxxxxxxxxxxxxxxxxx)"
     required: false
   VERCEL_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   VERSIO_ENDPOINT:
-    description:  "The endpoint URL of the API Server"
+    description:   "The endpoint URL of the API Server"
     required: false
   VERSIO_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   VERSIO_PASSWORD:
-    description:  "Basic authentication password"
+    description:   "Basic authentication password"
     required: false
   VERSIO_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VERSIO_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VERSIO_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests, default 60s"
+    description:   "Time between sequential requests, default 60s"
     required: false
   VERSIO_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   VERSIO_USERNAME:
-    description:  "Basic authentication username"
+    description:   "Basic authentication username"
     required: false
   VINYLDNS_ACCESS_KEY:
-    description:  "The VinylDNS API key"
+    description:   "The VinylDNS API key"
     required: false
   VINYLDNS_HOST:
-    description:  "The VinylDNS API URL"
+    description:   "The VinylDNS API URL"
     required: false
   VINYLDNS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VINYLDNS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VINYLDNS_SECRET_KEY:
-    description:  "The VinylDNS API Secret key"
+    description:   "The VinylDNS API Secret key"
     required: false
   VINYLDNS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
-  VK_CLOUD_DNS_ENDPOINT="URL:
-    description: "URL of DNS API. Defaults to https://mcs.mail.ru/public-dns but can be changed for usage with private clouds"
+  VK_CLOUD_DNS_ENDPOINT:
+    description:  "URL of DNS API. Defaults to https://mcs.mail.ru/public-dns but can be changed for usage with private clouds"
     required: false
-  VK_CLOUD_DOMAIN_NAME="Openstack:
-    description: "Openstack users domain name. Defaults to `users` but can be changed for usage with private clouds"
+  VK_CLOUD_DOMAIN_NAME:
+    description:  "Openstack users domain name. Defaults to `users` but can be changed for usage with private clouds"
     required: false
-  VK_CLOUD_IDENTITY_ENDPOINT="URL:
-    description: "URL of OpenStack Auth API, Defaults to https://infra.mail.ru:35357/v3/ but can be changed for usage with private clouds"
+  VK_CLOUD_IDENTITY_ENDPOINT:
+    description:  "URL of OpenStack Auth API, Defaults to https://infra.mail.ru:35357/v3/ but can be changed for usage with private clouds"
     required: false
   VK_CLOUD_PASSWORD:
-    description:  "Password for VK Cloud account"
+    description:   "Password for VK Cloud account"
     required: false
   VK_CLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VK_CLOUD_PROJECT_ID:
-    description:  "String ID of project in VK Cloud"
+    description:   "String ID of project in VK Cloud"
     required: false
   VK_CLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VK_CLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   VK_CLOUD_USERNAME:
-    description:  "Email of VK Cloud account"
+    description:   "Email of VK Cloud account"
     required: false
   VSCALE_API_TOKEN:
-    description:  "API token"
+    description:   "API token"
     required: false
   VSCALE_BASE_URL:
-    description:  "API endpoint URL"
+    description:   "API endpoint URL"
     required: false
   VSCALE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   VSCALE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VSCALE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VSCALE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   VULTR_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   VULTR_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   VULTR_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   VULTR_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   VULTR_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   WEBSUPPORT_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   WEBSUPPORT_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   WEBSUPPORT_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   WEBSUPPORT_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   WEBSUPPORT_SECRET:
-    description:  "API secret"
+    description:   "API secret"
     required: false
   WEBSUPPORT_SEQUENCE_INTERVAL:
-    description:  "Time between sequential requests"
+    description:   "Time between sequential requests"
     required: false
   WEBSUPPORT_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   WEDOS_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   WEDOS_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   WEDOS_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   WEDOS_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   WEDOS_USERNAME:
-    description:  "Username is the same as for the admin account"
+    description:   "Username is the same as for the admin account"
     required: false
   WEDOS_WAPI_PASSWORD:
-    description:  "Password needs to be generated and IP allowed in the admin interface"
+    description:   "Password needs to be generated and IP allowed in the admin interface"
     required: false
   YANDEX_CLOUD_FOLDER_ID:
-    description:  "The string id of folder (aka project) in Yandex Cloud"
+    description:   "The string id of folder (aka project) in Yandex Cloud"
     required: false
   YANDEX_CLOUD_IAM_TOKEN:
-    description:  "The base64 encoded json which contains inforamtion about iam token of serivce account with `dns.admin` permissions"
+    description:   "The base64 encoded json which contains inforamtion about iam token of serivce account with `dns.admin` permissions"
     required: false
   YANDEX_CLOUD_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   YANDEX_CLOUD_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   YANDEX_CLOUD_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   YANDEX_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   YANDEX_PDD_TOKEN:
-    description:  "Basic authentication username"
+    description:   "Basic authentication username"
     required: false
   YANDEX_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   YANDEX_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   YANDEX_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   ZONEEE_API_KEY:
-    description:  "API key"
+    description:   "API key"
     required: false
   ZONEEE_API_USER:
-    description:  "API user"
+    description:   "API user"
     required: false
   ZONEEE_ENDPOINT:
-    description:  "API endpoint URL"
+    description:   "API endpoint URL"
     required: false
   ZONEEE_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   ZONEEE_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   ZONEEE_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   ZONEEE_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   ZONOMI_API_KEY:
-    description:  "User API key"
+    description:   "User API key"
     required: false
   ZONOMI_HTTP_TIMEOUT:
-    description:  "API request timeout"
+    description:   "API request timeout"
     required: false
   ZONOMI_POLLING_INTERVAL:
-    description:  "Time between DNS propagation check"
+    description:   "Time between DNS propagation check"
     required: false
   ZONOMI_PROPAGATION_TIMEOUT:
-    description:  "Maximum waiting time for DNS propagation"
+    description:   "Maximum waiting time for DNS propagation"
     required: false
   ZONOMI_TTL:
-    description:  "The TTL of the TXT record used for the DNS challenge"
+    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
 
 runs:
@@ -2432,6 +2432,7 @@ runs:
     DESIGNATE_POLLING_INTERVAL: ${{ inputs.DESIGNATE_POLLING_INTERVAL }}
     DESIGNATE_PROPAGATION_TIMEOUT: ${{ inputs.DESIGNATE_PROPAGATION_TIMEOUT }}
     DESIGNATE_TTL: ${{ inputs.DESIGNATE_TTL }}
+    DNS_ZONE: ${{ inputs.DNS_ZONE }}
     DNSHOMEDE_CREDENTIALS: ${{ inputs.DNSHOMEDE_CREDENTIALS }}
     DNSHOMEDE_HTTP_TIMEOUT: ${{ inputs.DNSHOMEDE_HTTP_TIMEOUT }}
     DNSHOMEDE_POLLING_INTERVAL: ${{ inputs.DNSHOMEDE_POLLING_INTERVAL }}
@@ -2454,7 +2455,12 @@ runs:
     DNSPOD_POLLING_INTERVAL: ${{ inputs.DNSPOD_POLLING_INTERVAL }}
     DNSPOD_PROPAGATION_TIMEOUT: ${{ inputs.DNSPOD_PROPAGATION_TIMEOUT }}
     DNSPOD_TTL: ${{ inputs.DNSPOD_TTL }}
-    DNS_ZONE: ${{ inputs.DNS_ZONE }}
+    DO_API_URL: ${{ inputs.DO_API_URL }}
+    DO_AUTH_TOKEN: ${{ inputs.DO_AUTH_TOKEN }}
+    DO_HTTP_TIMEOUT: ${{ inputs.DO_HTTP_TIMEOUT }}
+    DO_POLLING_INTERVAL: ${{ inputs.DO_POLLING_INTERVAL }}
+    DO_PROPAGATION_TIMEOUT: ${{ inputs.DO_PROPAGATION_TIMEOUT }}
+    DO_TTL: ${{ inputs.DO_TTL }}
     DODE_HTTP_TIMEOUT: ${{ inputs.DODE_HTTP_TIMEOUT }}
     DODE_POLLING_INTERVAL: ${{ inputs.DODE_POLLING_INTERVAL }}
     DODE_PROPAGATION_TIMEOUT: ${{ inputs.DODE_PROPAGATION_TIMEOUT }}
@@ -2466,12 +2472,6 @@ runs:
     DOMENESHOP_HTTP_TIMEOUT: ${{ inputs.DOMENESHOP_HTTP_TIMEOUT }}
     DOMENESHOP_POLLING_INTERVAL: ${{ inputs.DOMENESHOP_POLLING_INTERVAL }}
     DOMENESHOP_PROPAGATION_TIMEOUT: ${{ inputs.DOMENESHOP_PROPAGATION_TIMEOUT }}
-    DO_API_URL: ${{ inputs.DO_API_URL }}
-    DO_AUTH_TOKEN: ${{ inputs.DO_AUTH_TOKEN }}
-    DO_HTTP_TIMEOUT: ${{ inputs.DO_HTTP_TIMEOUT }}
-    DO_POLLING_INTERVAL: ${{ inputs.DO_POLLING_INTERVAL }}
-    DO_PROPAGATION_TIMEOUT: ${{ inputs.DO_PROPAGATION_TIMEOUT }}
-    DO_TTL: ${{ inputs.DO_TTL }}
     DREAMHOST_API_KEY: ${{ inputs.DREAMHOST_API_KEY }}
     DREAMHOST_HTTP_TIMEOUT: ${{ inputs.DREAMHOST_HTTP_TIMEOUT }}
     DREAMHOST_POLLING_INTERVAL: ${{ inputs.DREAMHOST_POLLING_INTERVAL }}
@@ -2483,11 +2483,6 @@ runs:
     DUCKDNS_SEQUENCE_INTERVAL: ${{ inputs.DUCKDNS_SEQUENCE_INTERVAL }}
     DUCKDNS_TOKEN: ${{ inputs.DUCKDNS_TOKEN }}
     DUCKDNS_TTL: ${{ inputs.DUCKDNS_TTL }}
-    DYNU_API_KEY: ${{ inputs.DYNU_API_KEY }}
-    DYNU_HTTP_TIMEOUT: ${{ inputs.DYNU_HTTP_TIMEOUT }}
-    DYNU_POLLING_INTERVAL: ${{ inputs.DYNU_POLLING_INTERVAL }}
-    DYNU_PROPAGATION_TIMEOUT: ${{ inputs.DYNU_PROPAGATION_TIMEOUT }}
-    DYNU_TTL: ${{ inputs.DYNU_TTL }}
     DYN_CUSTOMER_NAME: ${{ inputs.DYN_CUSTOMER_NAME }}
     DYN_HTTP_TIMEOUT: ${{ inputs.DYN_HTTP_TIMEOUT }}
     DYN_PASSWORD: ${{ inputs.DYN_PASSWORD }}
@@ -2495,6 +2490,11 @@ runs:
     DYN_PROPAGATION_TIMEOUT: ${{ inputs.DYN_PROPAGATION_TIMEOUT }}
     DYN_TTL: ${{ inputs.DYN_TTL }}
     DYN_USER_NAME: ${{ inputs.DYN_USER_NAME }}
+    DYNU_API_KEY: ${{ inputs.DYNU_API_KEY }}
+    DYNU_HTTP_TIMEOUT: ${{ inputs.DYNU_HTTP_TIMEOUT }}
+    DYNU_POLLING_INTERVAL: ${{ inputs.DYNU_POLLING_INTERVAL }}
+    DYNU_PROPAGATION_TIMEOUT: ${{ inputs.DYNU_PROPAGATION_TIMEOUT }}
+    DYNU_TTL: ${{ inputs.DYNU_TTL }}
     EASYDNS_ENDPOINT: ${{ inputs.EASYDNS_ENDPOINT }}
     EASYDNS_HTTP_TIMEOUT: ${{ inputs.EASYDNS_HTTP_TIMEOUT }}
     EASYDNS_KEY: ${{ inputs.EASYDNS_KEY }}
@@ -2522,16 +2522,16 @@ runs:
     FREEMYIP_SEQUENCE_INTERVAL: ${{ inputs.FREEMYIP_SEQUENCE_INTERVAL }}
     FREEMYIP_TOKEN: ${{ inputs.FREEMYIP_TOKEN }}
     FREEMYIP_TTL: ${{ inputs.FREEMYIP_TTL }}
-    GANDIV5_API_KEY: ${{ inputs.GANDIV5_API_KEY }}
-    GANDIV5_HTTP_TIMEOUT: ${{ inputs.GANDIV5_HTTP_TIMEOUT }}
-    GANDIV5_POLLING_INTERVAL: ${{ inputs.GANDIV5_POLLING_INTERVAL }}
-    GANDIV5_PROPAGATION_TIMEOUT: ${{ inputs.GANDIV5_PROPAGATION_TIMEOUT }}
-    GANDIV5_TTL: ${{ inputs.GANDIV5_TTL }}
     GANDI_API_KEY: ${{ inputs.GANDI_API_KEY }}
     GANDI_HTTP_TIMEOUT: ${{ inputs.GANDI_HTTP_TIMEOUT }}
     GANDI_POLLING_INTERVAL: ${{ inputs.GANDI_POLLING_INTERVAL }}
     GANDI_PROPAGATION_TIMEOUT: ${{ inputs.GANDI_PROPAGATION_TIMEOUT }}
     GANDI_TTL: ${{ inputs.GANDI_TTL }}
+    GANDIV5_API_KEY: ${{ inputs.GANDIV5_API_KEY }}
+    GANDIV5_HTTP_TIMEOUT: ${{ inputs.GANDIV5_HTTP_TIMEOUT }}
+    GANDIV5_POLLING_INTERVAL: ${{ inputs.GANDIV5_POLLING_INTERVAL }}
+    GANDIV5_PROPAGATION_TIMEOUT: ${{ inputs.GANDIV5_PROPAGATION_TIMEOUT }}
+    GANDIV5_TTL: ${{ inputs.GANDIV5_TTL }}
     GCE_ALLOW_PRIVATE_ZONE: ${{ inputs.GCE_ALLOW_PRIVATE_ZONE }}
     GCE_POLLING_INTERVAL: ${{ inputs.GCE_POLLING_INTERVAL }}
     GCE_PROJECT: ${{ inputs.GCE_PROJECT }}
@@ -2790,8 +2790,8 @@ runs:
     OS_PROJECT_NAME: ${{ inputs.OS_PROJECT_NAME }}
     OS_REGION_NAME: ${{ inputs.OS_REGION_NAME }}
     OS_TENANT_NAME: ${{ inputs.OS_TENANT_NAME }}
-    OS_USERNAME: ${{ inputs.OS_USERNAME }}
     OS_USER_ID: ${{ inputs.OS_USER_ID }}
+    OS_USERNAME: ${{ inputs.OS_USERNAME }}
     OTC_DOMAIN_NAME: ${{ inputs.OTC_DOMAIN_NAME }}
     OTC_HTTP_TIMEOUT: ${{ inputs.OTC_HTTP_TIMEOUT }}
     OTC_IDENTITY_ENDPOINT: ${{ inputs.OTC_IDENTITY_ENDPOINT }}
@@ -2958,9 +2958,9 @@ runs:
     VINYLDNS_PROPAGATION_TIMEOUT: ${{ inputs.VINYLDNS_PROPAGATION_TIMEOUT }}
     VINYLDNS_SECRET_KEY: ${{ inputs.VINYLDNS_SECRET_KEY }}
     VINYLDNS_TTL: ${{ inputs.VINYLDNS_TTL }}
-    VK_CLOUD_DNS_ENDPOINT="URL: ${{ inputs.VK_CLOUD_DNS_ENDPOINT="URL }}
-    VK_CLOUD_DOMAIN_NAME="Openstack: ${{ inputs.VK_CLOUD_DOMAIN_NAME="Openstack }}
-    VK_CLOUD_IDENTITY_ENDPOINT="URL: ${{ inputs.VK_CLOUD_IDENTITY_ENDPOINT="URL }}
+    VK_CLOUD_DNS_ENDPOINT: ${{ inputs.VK_CLOUD_DNS_ENDPOINT }}
+    VK_CLOUD_DOMAIN_NAME: ${{ inputs.VK_CLOUD_DOMAIN_NAME }}
+    VK_CLOUD_IDENTITY_ENDPOINT: ${{ inputs.VK_CLOUD_IDENTITY_ENDPOINT }}
     VK_CLOUD_PASSWORD: ${{ inputs.VK_CLOUD_PASSWORD }}
     VK_CLOUD_POLLING_INTERVAL: ${{ inputs.VK_CLOUD_POLLING_INTERVAL }}
     VK_CLOUD_PROJECT_ID: ${{ inputs.VK_CLOUD_PROJECT_ID }}
