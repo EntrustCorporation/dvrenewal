@@ -516,9 +516,6 @@ inputs:
   DESIGNATE_TTL:
     description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
-  DNS_ZONE:
-    description:   "Domain name of the DNS zone"
-    required: false
   DNSHOMEDE_CREDENTIALS:
     description:   "Comma-separated list of domain:password credential pairs"
     required: false
@@ -585,23 +582,8 @@ inputs:
   DNSPOD_TTL:
     description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
-  DO_API_URL:
-    description:   "The URL of the API"
-    required: false
-  DO_AUTH_TOKEN:
-    description:   "Authentication token"
-    required: false
-  DO_HTTP_TIMEOUT:
-    description:   "API request timeout"
-    required: false
-  DO_POLLING_INTERVAL:
-    description:   "Time between DNS propagation check"
-    required: false
-  DO_PROPAGATION_TIMEOUT:
-    description:   "Maximum waiting time for DNS propagation"
-    required: false
-  DO_TTL:
-    description:   "The TTL of the TXT record used for the DNS challenge"
+  DNS_ZONE:
+    description:   "Domain name of the DNS zone"
     required: false
   DODE_HTTP_TIMEOUT:
     description:   "API request timeout"
@@ -636,6 +618,24 @@ inputs:
   DOMENESHOP_PROPAGATION_TIMEOUT:
     description:   "Maximum waiting time for DNS propagation"
     required: false
+  DO_API_URL:
+    description:   "The URL of the API"
+    required: false
+  DO_AUTH_TOKEN:
+    description:   "Authentication token"
+    required: false
+  DO_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DO_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DO_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  DO_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
   DREAMHOST_API_KEY:
     description:   "The API key"
     required: false
@@ -669,6 +669,21 @@ inputs:
   DUCKDNS_TTL:
     description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
+  DYNU_API_KEY:
+    description:   "API key"
+    required: false
+  DYNU_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  DYNU_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  DYNU_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  DYNU_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
   DYN_CUSTOMER_NAME:
     description:   "Customer name"
     required: false
@@ -689,21 +704,6 @@ inputs:
     required: false
   DYN_USER_NAME:
     description:   "User name"
-    required: false
-  DYNU_API_KEY:
-    description:   "API key"
-    required: false
-  DYNU_HTTP_TIMEOUT:
-    description:   "API request timeout"
-    required: false
-  DYNU_POLLING_INTERVAL:
-    description:   "Time between DNS propagation check"
-    required: false
-  DYNU_PROPAGATION_TIMEOUT:
-    description:   "Maximum waiting time for DNS propagation"
-    required: false
-  DYNU_TTL:
-    description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   EASYDNS_ENDPOINT:
     description:   "The endpoint URL of the API Server"
@@ -786,21 +786,6 @@ inputs:
   FREEMYIP_TTL:
     description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
-  GANDI_API_KEY:
-    description:   "API key"
-    required: false
-  GANDI_HTTP_TIMEOUT:
-    description:   "API request timeout"
-    required: false
-  GANDI_POLLING_INTERVAL:
-    description:   "Time between DNS propagation check"
-    required: false
-  GANDI_PROPAGATION_TIMEOUT:
-    description:   "Maximum waiting time for DNS propagation"
-    required: false
-  GANDI_TTL:
-    description:   "The TTL of the TXT record used for the DNS challenge"
-    required: false
   GANDIV5_API_KEY:
     description:   "API key"
     required: false
@@ -814,6 +799,21 @@ inputs:
     description:   "Maximum waiting time for DNS propagation"
     required: false
   GANDIV5_TTL:
+    description:   "The TTL of the TXT record used for the DNS challenge"
+    required: false
+  GANDI_API_KEY:
+    description:   "API key"
+    required: false
+  GANDI_HTTP_TIMEOUT:
+    description:   "API request timeout"
+    required: false
+  GANDI_POLLING_INTERVAL:
+    description:   "Time between DNS propagation check"
+    required: false
+  GANDI_PROPAGATION_TIMEOUT:
+    description:   "Maximum waiting time for DNS propagation"
+    required: false
+  GANDI_TTL:
     description:   "The TTL of the TXT record used for the DNS challenge"
     required: false
   GCE_ALLOW_PRIVATE_ZONE:
@@ -1590,11 +1590,11 @@ inputs:
   OS_TENANT_NAME:
     description:   "Tenant name (deprecated see OS_PROJECT_NAME and OS_PROJECT_ID)"
     required: false
-  OS_USER_ID:
-    description:   "User ID"
-    required: false
   OS_USERNAME:
     description:   "Username"
+    required: false
+  OS_USER_ID:
+    description:   "User ID"
     required: false
   OTC_DOMAIN_NAME:
     description:   "Domain name"
@@ -2432,7 +2432,6 @@ runs:
     DESIGNATE_POLLING_INTERVAL: ${{ inputs.DESIGNATE_POLLING_INTERVAL }}
     DESIGNATE_PROPAGATION_TIMEOUT: ${{ inputs.DESIGNATE_PROPAGATION_TIMEOUT }}
     DESIGNATE_TTL: ${{ inputs.DESIGNATE_TTL }}
-    DNS_ZONE: ${{ inputs.DNS_ZONE }}
     DNSHOMEDE_CREDENTIALS: ${{ inputs.DNSHOMEDE_CREDENTIALS }}
     DNSHOMEDE_HTTP_TIMEOUT: ${{ inputs.DNSHOMEDE_HTTP_TIMEOUT }}
     DNSHOMEDE_POLLING_INTERVAL: ${{ inputs.DNSHOMEDE_POLLING_INTERVAL }}
@@ -2455,12 +2454,7 @@ runs:
     DNSPOD_POLLING_INTERVAL: ${{ inputs.DNSPOD_POLLING_INTERVAL }}
     DNSPOD_PROPAGATION_TIMEOUT: ${{ inputs.DNSPOD_PROPAGATION_TIMEOUT }}
     DNSPOD_TTL: ${{ inputs.DNSPOD_TTL }}
-    DO_API_URL: ${{ inputs.DO_API_URL }}
-    DO_AUTH_TOKEN: ${{ inputs.DO_AUTH_TOKEN }}
-    DO_HTTP_TIMEOUT: ${{ inputs.DO_HTTP_TIMEOUT }}
-    DO_POLLING_INTERVAL: ${{ inputs.DO_POLLING_INTERVAL }}
-    DO_PROPAGATION_TIMEOUT: ${{ inputs.DO_PROPAGATION_TIMEOUT }}
-    DO_TTL: ${{ inputs.DO_TTL }}
+    DNS_ZONE: ${{ inputs.DNS_ZONE }}
     DODE_HTTP_TIMEOUT: ${{ inputs.DODE_HTTP_TIMEOUT }}
     DODE_POLLING_INTERVAL: ${{ inputs.DODE_POLLING_INTERVAL }}
     DODE_PROPAGATION_TIMEOUT: ${{ inputs.DODE_PROPAGATION_TIMEOUT }}
@@ -2472,6 +2466,12 @@ runs:
     DOMENESHOP_HTTP_TIMEOUT: ${{ inputs.DOMENESHOP_HTTP_TIMEOUT }}
     DOMENESHOP_POLLING_INTERVAL: ${{ inputs.DOMENESHOP_POLLING_INTERVAL }}
     DOMENESHOP_PROPAGATION_TIMEOUT: ${{ inputs.DOMENESHOP_PROPAGATION_TIMEOUT }}
+    DO_API_URL: ${{ inputs.DO_API_URL }}
+    DO_AUTH_TOKEN: ${{ inputs.DO_AUTH_TOKEN }}
+    DO_HTTP_TIMEOUT: ${{ inputs.DO_HTTP_TIMEOUT }}
+    DO_POLLING_INTERVAL: ${{ inputs.DO_POLLING_INTERVAL }}
+    DO_PROPAGATION_TIMEOUT: ${{ inputs.DO_PROPAGATION_TIMEOUT }}
+    DO_TTL: ${{ inputs.DO_TTL }}
     DREAMHOST_API_KEY: ${{ inputs.DREAMHOST_API_KEY }}
     DREAMHOST_HTTP_TIMEOUT: ${{ inputs.DREAMHOST_HTTP_TIMEOUT }}
     DREAMHOST_POLLING_INTERVAL: ${{ inputs.DREAMHOST_POLLING_INTERVAL }}
@@ -2483,6 +2483,11 @@ runs:
     DUCKDNS_SEQUENCE_INTERVAL: ${{ inputs.DUCKDNS_SEQUENCE_INTERVAL }}
     DUCKDNS_TOKEN: ${{ inputs.DUCKDNS_TOKEN }}
     DUCKDNS_TTL: ${{ inputs.DUCKDNS_TTL }}
+    DYNU_API_KEY: ${{ inputs.DYNU_API_KEY }}
+    DYNU_HTTP_TIMEOUT: ${{ inputs.DYNU_HTTP_TIMEOUT }}
+    DYNU_POLLING_INTERVAL: ${{ inputs.DYNU_POLLING_INTERVAL }}
+    DYNU_PROPAGATION_TIMEOUT: ${{ inputs.DYNU_PROPAGATION_TIMEOUT }}
+    DYNU_TTL: ${{ inputs.DYNU_TTL }}
     DYN_CUSTOMER_NAME: ${{ inputs.DYN_CUSTOMER_NAME }}
     DYN_HTTP_TIMEOUT: ${{ inputs.DYN_HTTP_TIMEOUT }}
     DYN_PASSWORD: ${{ inputs.DYN_PASSWORD }}
@@ -2490,11 +2495,6 @@ runs:
     DYN_PROPAGATION_TIMEOUT: ${{ inputs.DYN_PROPAGATION_TIMEOUT }}
     DYN_TTL: ${{ inputs.DYN_TTL }}
     DYN_USER_NAME: ${{ inputs.DYN_USER_NAME }}
-    DYNU_API_KEY: ${{ inputs.DYNU_API_KEY }}
-    DYNU_HTTP_TIMEOUT: ${{ inputs.DYNU_HTTP_TIMEOUT }}
-    DYNU_POLLING_INTERVAL: ${{ inputs.DYNU_POLLING_INTERVAL }}
-    DYNU_PROPAGATION_TIMEOUT: ${{ inputs.DYNU_PROPAGATION_TIMEOUT }}
-    DYNU_TTL: ${{ inputs.DYNU_TTL }}
     EASYDNS_ENDPOINT: ${{ inputs.EASYDNS_ENDPOINT }}
     EASYDNS_HTTP_TIMEOUT: ${{ inputs.EASYDNS_HTTP_TIMEOUT }}
     EASYDNS_KEY: ${{ inputs.EASYDNS_KEY }}
@@ -2522,16 +2522,16 @@ runs:
     FREEMYIP_SEQUENCE_INTERVAL: ${{ inputs.FREEMYIP_SEQUENCE_INTERVAL }}
     FREEMYIP_TOKEN: ${{ inputs.FREEMYIP_TOKEN }}
     FREEMYIP_TTL: ${{ inputs.FREEMYIP_TTL }}
-    GANDI_API_KEY: ${{ inputs.GANDI_API_KEY }}
-    GANDI_HTTP_TIMEOUT: ${{ inputs.GANDI_HTTP_TIMEOUT }}
-    GANDI_POLLING_INTERVAL: ${{ inputs.GANDI_POLLING_INTERVAL }}
-    GANDI_PROPAGATION_TIMEOUT: ${{ inputs.GANDI_PROPAGATION_TIMEOUT }}
-    GANDI_TTL: ${{ inputs.GANDI_TTL }}
     GANDIV5_API_KEY: ${{ inputs.GANDIV5_API_KEY }}
     GANDIV5_HTTP_TIMEOUT: ${{ inputs.GANDIV5_HTTP_TIMEOUT }}
     GANDIV5_POLLING_INTERVAL: ${{ inputs.GANDIV5_POLLING_INTERVAL }}
     GANDIV5_PROPAGATION_TIMEOUT: ${{ inputs.GANDIV5_PROPAGATION_TIMEOUT }}
     GANDIV5_TTL: ${{ inputs.GANDIV5_TTL }}
+    GANDI_API_KEY: ${{ inputs.GANDI_API_KEY }}
+    GANDI_HTTP_TIMEOUT: ${{ inputs.GANDI_HTTP_TIMEOUT }}
+    GANDI_POLLING_INTERVAL: ${{ inputs.GANDI_POLLING_INTERVAL }}
+    GANDI_PROPAGATION_TIMEOUT: ${{ inputs.GANDI_PROPAGATION_TIMEOUT }}
+    GANDI_TTL: ${{ inputs.GANDI_TTL }}
     GCE_ALLOW_PRIVATE_ZONE: ${{ inputs.GCE_ALLOW_PRIVATE_ZONE }}
     GCE_POLLING_INTERVAL: ${{ inputs.GCE_POLLING_INTERVAL }}
     GCE_PROJECT: ${{ inputs.GCE_PROJECT }}
@@ -2790,8 +2790,8 @@ runs:
     OS_PROJECT_NAME: ${{ inputs.OS_PROJECT_NAME }}
     OS_REGION_NAME: ${{ inputs.OS_REGION_NAME }}
     OS_TENANT_NAME: ${{ inputs.OS_TENANT_NAME }}
-    OS_USER_ID: ${{ inputs.OS_USER_ID }}
     OS_USERNAME: ${{ inputs.OS_USERNAME }}
+    OS_USER_ID: ${{ inputs.OS_USER_ID }}
     OTC_DOMAIN_NAME: ${{ inputs.OTC_DOMAIN_NAME }}
     OTC_HTTP_TIMEOUT: ${{ inputs.OTC_HTTP_TIMEOUT }}
     OTC_IDENTITY_ENDPOINT: ${{ inputs.OTC_IDENTITY_ENDPOINT }}
